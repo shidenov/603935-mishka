@@ -1,8 +1,8 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Чингиз Шиденов](https://up.htmlacademy.ru/adaptive/14/user/603935).
-* Наставник: [Игорь Уваров]
-(https://htmlacademy.ru/profile/id59956).
+* Наставник: [Игорь Уваров](https://htmlacademy.ru/profile/id59956).
+
 
 ---
 
