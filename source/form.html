@@ -31,26 +31,26 @@
 
     <main class="page-main">
 
-      <h1 class="form-title">Вязание на заказ</h1>
+      <h1 class="inner-page-title">Вязание на заказ</h1>
 
       <p class="form-description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
-        <fieldset class="form__type">
+        <fieldset class="form__group">
           <legend class="form__legend">Тип</legend>
 
-          <input class="form__radio" type="radio" name="radio" id="accessory" value="accessory" checked>
+          <input class="form__input form__input--radio" type="radio" name="radio" id="accessory" value="accessory" checked>
           <label class="form__label" for="accessory">Аксессуар для интерьера</label>
 
-          <input class="form__radio" type="radio" name="radio" id="toy" value="toy">
+          <input class="form__input form__input--radio" type="radio" name="radio" id="toy" value="toy">
           <label class="form__label" for="toy">Детская игрушка</label>
         </fieldset>
 
-        <fieldset class="form__color">
+        <fieldset class="form__group">
           <legend class="form__legend">Цвет</legend>
 
-          <input class="form__checkbox" type="checkbox" name="white" id="white" checked>
+          <input class="form__input form__input--checkbox" type="checkbox" name="white" id="white" checked>
           <label class="form__label" for="white">Белый</label>
 
           <input class="form__checkbox" type="checkbox" name="grey" id="grey" checked>
@@ -69,33 +69,31 @@
           <label class="form__label" for="orange">Оранжевый</label>
         </fieldset>
 
-        <fieldset class="form__initials">
+        <fieldset class="form__group">
           <legend class="form__legend">ФИО</legend>
 
-          <label for="name">Имя:</label>
-          <input class="form__text" type="text" name="name" id="name" placeholder="Введите ваше имя*">
+          <label class="form__label" for="name">Имя:</label>
+          <input class="form__input form__input--text" type="text" name="name" id="name" placeholder="Введите ваше имя*">
 
-          <label for="name">Фамилия:</label>
+          <label class="form__label" for="name">Фамилия:</label>
           <input class="form__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
 
-          <label for="name">Отчество:</label>
+          <label class="form__label" for="name">Отчество:</label>
           <input class="form__text" type="text" name="patronymic" id="patronymic" placeholder="Отчество если желаете">
         </fieldset>
 
-        <fieldset class="form__phone">
-          <legend class="form__legend">ТЕЛ</legend>
-          <input class="form__tel" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*">
+        <fieldset class="form__group">
+          <label class="form__label" for="tel">ТЕЛ</label>
+          <input class="form__text-input form__text-input--tel" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*">
+
+          <label class="form__label" for="email">E-MAIL</label>
+          <input class="form__text-input form__text-input--email" type="email" name="email" id="email" placeholder="Ваш Email*">
         </fieldset>
 
-        <fieldset class="form__email">
-          <legend class="form__legend">E-MAIL</legend>
-          <input class="form__email-input" type="email" name="email" id="email" placeholder="Ваш Email*">
-        </fieldset>
-
-        <fieldset class="form__text">
-          <legend class="form__legend">ДОП</legend>
+        <div class="form__group">
+          <label class="form__legend" for="textarea">ДОП</label>
           <textarea class="form__textarea" name="textarea" id="textarea" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        </fieldset>
+        </div>
 
         <span class="form__required">*Поля обязательны для заполнения</span>
 
