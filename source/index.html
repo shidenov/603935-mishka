@@ -32,46 +32,44 @@
 
       <h1 class="index-title">Милые штучки ручной работы для дома</h1>
 
-      <ul class="catalog">
-        <div class="catalog__wrapper">
-          <li class="catalog__item">
-            <a class="catalog__link" href="#">
-              <span class="catalog__description">Предметы интерьера</span>
+      <ul class="categories">
+          <li class="categories__item">
+            <a class="categories__link" href="#">
+              <span class="categories__description">Предметы интерьера</span>
             </a>
           </li>
-          <li class="catalog__item">
-            <a class="catalog__link" href="#">
-              <span class="catalog__description">Детские игрушки</span>
+          <li class="categories__item">
+            <a class="categories__link" href="#">
+              <span class="categories__description">Детские игрушки</span>
             </a>
           </li>
-        </div>
       </ul>
 
-      <section class="week-good">
-        <div class="week-good__wrapper">
-          <h2 class="week-good__title">Вязаные корзинки <span class="week-good__subtitle">Товар недели</span></h2>
-          <p class="week-good__description">
+      <section class="top-goods">
+        <div class="top-goods__wrapper">
+          <h2 class="top-goods__title">Вязаные корзинки <span class="top-goods__subtitle">Товар недели</span></h2>
+          <p class="top-goods__description">
             Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
           </p>
-          <table class="week-good__list">
+          <table class="top-goods__list">
             <tr>
-              <td class="week-good__property">Цвет:</td>
-              <td class="week-good__value">«Тиффани»/серый</td>
+              <td class="top-goods__property">Цвет:</td>
+              <td class="top-goods__value">«Тиффани»/серый</td>
             </tr>
             <tr>
-              <td class="week-good__property">Диаметр:</td>
-              <td class="week-good__value">25 см</td>
+              <td class="top-goods__property">Диаметр:</td>
+              <td class="top-goods__value">25 см</td>
             </tr>
             <tr>
-              <td class="week-good__property">Высота:</td>
-              <td class="week-good__value">15 см</td>
+              <td class="top-goods__property">Высота:</td>
+              <td class="top-goods__value">15 см</td>
             </tr>
           </table>
-          <figure week-good__image-description>
+          <div class="top-goods__image-description">
             <p class="week-good__image-wrapper"><img class="week-good__image" src="" width="" height="" alt="Товар недели"></p>
-            <figcaption>Цена: 990 руб.</figcaption>
-          </figure>
-          <a class="week-good__order button" href="#">Заказать</a>
+            <span class="top-goods__price">Цена: 990 руб.</span>
+          </div>
+          <a class="top-goods__order button" href="#">Заказать</a>
         </div>
       </section>
 
@@ -108,16 +106,14 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
-          <table class="contacts__list">
-            <tr>
-              <td class="contacts__property">e-mail:</td>
-              <td class="contacts__value"><a class="contacts__email" href="#">info@mimimishkashop.ru</a></td>
-            </tr>
-            <tr>
-              <td class="contacts__property">адрес:</td>
-              <td class="contacts__value">г. Санкт-Петербург,<br>ул. Большая<br>Конюшенная,<br>д. 19/8, офис 101</td>
-            </tr>
-          </table>
+          <div class="contacts__email">
+            <span class="contacts__property">e-mail:</span>
+            <span class="contacts__value">info@mimimishkashop.ru</span>
+          </div>
+          <div class="contacts__address">
+            <span class="contacts__property">адрес:</span>
+            <address class="contacts__value">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br> д. 19/8, офис 101</address>
+          </div>
         </div>
       </section>
 
@@ -148,7 +144,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           Разработано
-          <a class="button copyright__link" href="https://tmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
 
