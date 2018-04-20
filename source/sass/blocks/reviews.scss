@@ -1,7 +1,10 @@
 .reviews {
-  padding: 0 30px 0 30px;
+  padding: 59px 30px 45px 30px;
+  border-bottom: 6px solid #f1f1f1;
 }
+
 .reviews__title {
+  margin: 0 0 32px 0;
   padding: 0 30px 0 30px;
   font-size: 25px;
   line-height: 30px;
@@ -9,7 +12,7 @@
 
 .reviews__description {
   margin: 0;
-  padding: 0;
+  padding: 0 0 67px 0;
   font-family: "OpenSans", "Arial", sans-serif;
   color: #444444;
   font-size: 15px;
@@ -18,14 +21,22 @@
 }
 
 .reviews__author-name {
+  display: inline-block;
+  margin: 0 0 33px 0;
   font-style: normal;
 }
 
 .reviews__author-email {
+  display: inline-block;
+  padding-top: 11px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 400;
 }
 
 .reviews__list {
   padding: 0 30px 0 30px;
+}
+
+.reviews__next {
+  margin: 0 0 38px 0;
 }
