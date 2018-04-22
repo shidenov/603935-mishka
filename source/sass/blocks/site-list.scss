@@ -11,3 +11,13 @@
 .site-list__item a {
   color: #000000;
 }
+
+@media (min-width: $tablet) {
+  .site-list {
+    font-size: 15px
+  }
+  .site-list__item {
+    margin: 0 36px 0 0;
+    padding: 0;
+  }
+}

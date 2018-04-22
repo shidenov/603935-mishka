@@ -5,8 +5,7 @@
   line-height: 30px;
 }
 
-.contacts__property,
-.contacts__value {
+.contacts__email-section {
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -21,4 +20,18 @@
 
 .contacts__email {
   margin: 0 0 38px 0;
+}
+
+@media (min-width: $tablet) {
+  .contacts__title {
+    margin:0 0 58px 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .contacts__email-section {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 38px;
+    font-size: 17px;
+  }
 }

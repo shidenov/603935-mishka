@@ -6,7 +6,6 @@
 
 .categories__item {
   background-color: #63d1bb;
-  padding: 28px 30px 30px 30px;
 }
 
 .categories__item--darker {
@@ -14,10 +13,31 @@
 }
 
 .categories__link {
+  display: inline-block;
+  padding: 28px 30px 30px 30px;
   color: #ffffff;
 }
 
 .categories__description {
   font-size: 19px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet) {
+  .categories {
+    display: flex;
+  }
+
+  .categories__item {
+    width: 334px;
+}
+
+.categories__link {
+  padding: 33px 30px 32px 35px;
+}
+
+  .categories__description {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

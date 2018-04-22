@@ -7,3 +7,9 @@
 .social__link {
   color: #000000;
 }
+
+@media (min-width: $tablet) {
+  .social__list {
+    display: flex;
+  }
+}

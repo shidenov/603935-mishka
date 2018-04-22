@@ -11,3 +11,9 @@
 .user-list__item a {
   color: #000000;
 }
+
+@media (min-width: $tablet) {
+  .user-list__item {
+    padding: 0;
+  }
+}
