@@ -4,7 +4,14 @@
 
 @media (min-width: $tablet) {
   .page-header {
-    min-height: 126px;
+    min-height: 128px;
     padding: 0 50px 0 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-header {
+    min-height: 130px;
+    padding: 0 100px 0 100px;
   }
 }

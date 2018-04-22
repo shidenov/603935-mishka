@@ -16,3 +16,31 @@
     padding: 0 50px 0 50px;
   }
 }
+
+@media (min-width: $desktop) {
+  .contacts-section {
+    position: relative;
+    padding: 141px 0 105px 0;
+  }
+
+  .contacts-section__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 100px 0 100px;
+  }
+
+  .contacts-section__map {
+    position: absolute;
+    right: 400px;
+    top: 100px;
+  }
+
+  .contacts-section__main {
+    padding: 0;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

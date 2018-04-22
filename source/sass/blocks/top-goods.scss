@@ -60,7 +60,7 @@
 
 @media (min-width: $tablet) {
   .top-goods {
-    padding: 50px 0 0 0;
+    padding: 50px 0 53px 0;
   }
   .top-goods__wrapper {
     position: relative;
@@ -118,5 +118,24 @@
   .top-goods__price {
     font-size: 20px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .top-goods {
+    padding: 127px 0 73px 0;
+  }
+
+  .top-goods__wrapper {
+    padding: 0 100px 0 100px;
+  }
+
+  .top-goods__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .top-goods__subtitle {
+    order: -1;
   }
 }

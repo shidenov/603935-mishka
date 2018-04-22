@@ -35,3 +35,9 @@
     font-size: 17px;
   }
 }
+
+@media (min-width: $desktop) {
+  .contacts__email-section {
+     display: block;
+  }
+}

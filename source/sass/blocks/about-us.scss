@@ -1,5 +1,5 @@
 .about-us {
-  padding: 29px 30px 0 30px;
+  padding: 29px 30px 62px 30px;
 }
 
 .about-us__title {
@@ -21,7 +21,7 @@
 
 @media (min-width: $tablet) {
   .about-us {
-    padding: 0 50px 0 50px;
+    padding: 52px 50px 84px 50px;
   }
 
   .about-us__list {
@@ -38,5 +38,16 @@
     width: 50%;
     font-size: 20px;
     line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .about-us {
+    padding: 63px 100px 91px 100px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }

@@ -17,10 +17,6 @@
     justify-content: space-between;
   }
 
-  .main-nav__logo {
-
-  }
-
   .main-nav__list {
     display: flex;
     margin-right: auto;
@@ -40,5 +36,20 @@
     line-height: 24px;
     font-weight: 400;
     color: #444444;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav__main-extra-menu {
+    display: flex;
+    order: 2;
+  }
+
+  .main-nav__list {
+    order: -1;
+  }
+
+  .main-nav__list-user {
+    order: 0;
   }
 }

@@ -6,6 +6,12 @@
   .page-footer {
     display: flex;
     justify-content: space-between;
-    padding: 48px 50px 48px 50px;
+    padding: 51px 50px 51px 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-footer {
+    padding: 51px 100px 51px 100px;
   }
 }
