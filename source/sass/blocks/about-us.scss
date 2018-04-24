@@ -38,30 +38,30 @@
     width: 50%;
     font-size: 20px;
     line-height: 22px;
-  }
 
-  .about-us__item--flower {
-    order: 1;
-  }
+    &--flower {
+      order: 1;
+    }
 
-  .about-us__item--clew {
-    order: 2;
-  }
+    &--clew {
+      order: 2;
+    }
 
-  .about-us__item--money {
-    order: 3;
-  }
+    &--money {
+      order: 3;
+    }
 
-  .about-us__item--rocket {
-    order: 4;
-  }
+    &--rocket {
+      order: 4;
+    }
 
-  .about-us__item--heart {
-    order: 5;
-  }
+    &--heart {
+      order: 5;
+    }
 
-  .about-us__item--prize {
-    order: 6;
+    &--prize {
+      order: 6;
+    }
   }
 }
 
