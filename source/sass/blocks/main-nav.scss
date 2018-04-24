@@ -1,0 +1,55 @@
+.main-nav__main-extra-menu {
+  display: none;
+}
+
+.main-nav__description {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-nav__list {
+    display: flex;
+    margin-right: auto;
+    order: 2;
+  }
+
+  .main-nav__list-user {
+    display: flex;
+    order: 1;
+  }
+
+  .main-nav__description {
+    display: block;
+    order: 2;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #444444;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav__main-extra-menu {
+    display: flex;
+    order: 2;
+  }
+
+  .main-nav__list {
+    order: -1;
+  }
+
+  .main-nav__list-user {
+    order: 0;
+  }
+}

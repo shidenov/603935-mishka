@@ -4,6 +4,27 @@
   list-style: none;
 }
 
+.site-list__item {
+  padding: 30px 0;
+}
+
 .site-list__item a {
   color: #000000;
+}
+
+@media (min-width: $tablet) {
+  .site-list {
+    font-size: 15px;
+  }
+
+  .site-list__item {
+    margin-right: 0 36px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .site-list {
+    font-size: 17px;
+  }
 }

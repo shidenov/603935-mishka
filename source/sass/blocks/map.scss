@@ -1,0 +1,15 @@
+.map__image {
+  margin-bottom: 39px;
+}
+
+.map__write-container {
+  margin: 0;
+  padding: 0 30px;
+}
+
+@media (min-width: $tablet) {
+  .map__write-container {
+    padding: 0 50px;
+    text-align: center;
+  }
+}

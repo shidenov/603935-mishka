@@ -1,0 +1,11 @@
+.page-footer {
+  padding: 0 30px;
+}
+
+@media (min-width: $tablet) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 51px 50px;
+  }
+}

@@ -1,0 +1,10 @@
+.page-header {
+  padding: 0 30px;
+}
+
+@media (min-width: $tablet) {
+  .page-header {
+    max-height: 88px;
+    padding: 0 50px;
+  }
+}
