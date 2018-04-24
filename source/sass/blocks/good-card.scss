@@ -11,7 +11,47 @@
   font-weight: 400;
 }
 
+.good-card__price-basket {
+  margin: 0;
+}
+
 .good-card__price {
   font-size: 15px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet) {
+  .good-card {
+    display: flex;
+  }
+
+  .good-card__description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .good-card__link {
+    font-size: 20px;
+  }
+
+  .good-card__value {
+    margin-bottom: auto;
+    font-size: 15px;
+  }
+
+  .good-card__price {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .good-card {
+    display: block;
+    min-height: 659px;
+    width: 314px;
+  }
+
+  .good-card__description {
+    min-height: 199px;
+  }
 }

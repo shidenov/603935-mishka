@@ -1,4 +1,9 @@
+.form {
+  padding: 0 30px;
+}
+
 .form__group {
+  padding: 0;
   border: none;
   border-top: 1px solid #62d1ba;
 }
@@ -19,4 +24,44 @@
   line-height: 16px;
   color: #444444;
   font-weight: 400;
+}
+
+@media (min-width: $tablet) {
+  .form {
+    padding: 0 50px;
+  }
+
+  .form__group {
+    border: none;
+  }
+
+  .form__inner-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__input-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__label {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .form__order {
+    order: -1;
+  }
+
+  .form__required {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form__inner-section {
+    justify-content: flex-start;
+  }
 }

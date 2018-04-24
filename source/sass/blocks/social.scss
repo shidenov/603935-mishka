@@ -1,4 +1,5 @@
 .social__list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -6,10 +7,4 @@
 
 .social__link {
   color: #000000;
-}
-
-@media (min-width: $tablet) {
-  .social__list {
-    display: flex;
-  }
 }

@@ -1,5 +1,5 @@
 .contacts-section {
-  padding: 0 0 39px 0;
+  padding-bottom: 39px;
 }
 
 .contacts-section__main {
@@ -9,24 +9,26 @@
 
 @media (min-width: $tablet) {
   .contacts-section {
-    padding: 63px 0 58px 0;
+    padding-top: 63px;
+    padding-bottom: 58px;
   }
 
   .contacts-section__main {
-    padding: 0 50px 0 50px;
+    padding: 0 50px;
   }
 }
 
 @media (min-width: $desktop) {
   .contacts-section {
     position: relative;
-    padding: 141px 0 105px 0;
+    padding-top: 141px;
+    padding-bottom: 105px;
   }
 
   .contacts-section__wrapper {
     display: flex;
     flex-direction: column;
-    padding: 0 100px 0 100px;
+    padding: 0 50px;
   }
 
   .contacts-section__map {

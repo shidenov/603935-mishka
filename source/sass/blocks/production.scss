@@ -1,3 +1,7 @@
+.production {
+  padding: 0 30px;
+}
+
 .production__title {
   font-size: 17px;
   line-height: 24px;
@@ -9,4 +13,25 @@
   line-height: 24px;
   font-weight: 400;
   color: #444444;
+}
+
+@media (min-width: $tablet) {
+  .production {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+  }
+
+  .production__image-wrapper {
+    order: -1;
+  }
+
+  .production__title {
+    font-size: 20px;
+  }
+
+  .production__description {
+    font-size: 15px;
+    line-height: 30px;
+  }
 }
