@@ -3,8 +3,13 @@
 }
 
 .contacts-section__main {
-  margin: 0 0 72px 0;
+  margin-bottom: 41px;
   padding: 40px 30px 0 30px;
+}
+
+.contacts-section__write {
+  display: block;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet) {

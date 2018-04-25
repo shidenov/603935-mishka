@@ -1,10 +1,29 @@
+.page-footer {
+  background-color: #f1f1f1;
+}
+
 .social__list {
   display: flex;
+  align-items: center;
+  min-height: 80px;
   margin: 0;
   padding: 0;
   list-style: none;
+  border-bottom: 2px solid #ececec;
 }
 
-.social__link {
-  color: #000000;
+.page-footer__logo {
+  display: none;
+}
+
+.social__item {
+  margin-right: 40px;
+}
+
+.social__item:first-child {
+  margin-left: auto;
+}
+
+.social__item:last-child {
+  margin-right: auto;
 }

@@ -3,15 +3,16 @@
 }
 
 .categories-wrapper__title {
-  margin: 0 0 152px 0;
+  margin: 0 0 120px 0;
   padding: 0 30px;
   font-size: 27px;
   line-height: 30px;
+  text-align: center;
 }
 
 .categories-wrapper__image-container {
   min-height: 489px;
-  padding-top: 70px;
+  padding-top: 71px;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
@@ -27,6 +28,10 @@
 
   .categories-wrapper__list {
     padding: 0 50px;
+  }
+
+  .categories-wrapper__first-break {
+    display: none;
   }
 }
 

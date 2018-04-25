@@ -13,9 +13,26 @@
 }
 
 .categories__link {
+  position: relative;
   display: block;
   padding: 28px 30px 30px 30px;
   color: #ffffff;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.categories__icon-iterior {
+  position: absolute;
+  top: 23px;
+  right: 35px;
+}
+
+.categories__icon-toy {
+  position: absolute;
+  top: 21px;
+  right: 27px;
 }
 
 .categories__description {
