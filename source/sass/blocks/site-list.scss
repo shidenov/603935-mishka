@@ -5,12 +5,12 @@
 }
 
 .site-list__item {
-  padding: 30px;
   border-bottom: 1px solid #ececec;
 }
 
 .site-list__item a {
-  padding-left: 46px;
+  display: block;
+  padding: 30px 30px 30px 76px;
   color: #000000;
   line-height: 24px;
 

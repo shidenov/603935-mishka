@@ -5,27 +5,27 @@
 }
 
 .user-list__item {
-  padding: 30px;
   border-bottom: 1px solid #ececec;
 }
 
 .user-list__item a {
+  display: block;
   position: relative;
-  padding-left: 46px;
+  padding: 30px 30px 30px 76px;
   color: #000000;
   line-height: 24px;
 }
 
 .user-list__icon-search {
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 31px;
+  left: 32px;
 }
 
 .user-list__icon-cart {
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 30px;
+  left: 30px;
 }
 
 

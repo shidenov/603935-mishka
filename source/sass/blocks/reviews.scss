@@ -45,7 +45,7 @@
   width: 260px;
   min-height: 52px;
   margin-bottom: 38px;
-  border: 2px solid #ececec;
+  font-size: 0;
 }
 
 .reviews__prev,
@@ -54,11 +54,11 @@
   padding: 12px 0;
   text-align: center;
   background: none;
-  border: none;
+  border: 2px solid #ececec;
 }
 
-.reviews__prev {
-  border-right: 2px solid #ececec;
+.reviews__next {
+  margin-left: -2px;
 }
 
 @media (min-width: $tablet) {

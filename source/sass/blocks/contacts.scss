@@ -25,10 +25,10 @@
 
 .contacts__value {
   width: 180px;
-}
 
-.contacts__value--mail {
+  &--mail {
   border-bottom: 1px solid #62d1ba;
+  }
 }
 
 .contacts__email {
