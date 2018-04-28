@@ -19,3 +19,9 @@
     margin-right: auto;
   }
 }
+
+@media (min-width: $tablet) {
+  .social__list {
+    border-bottom: none;
+  }
+}

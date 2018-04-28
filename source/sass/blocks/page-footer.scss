@@ -10,7 +10,16 @@
 @media (min-width: $tablet) {
   .page-footer {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     padding: 51px 50px;
+  }
+
+  .page-footer__logo {
+    display: block;
+    margin-right: 160px;
+  }
+
+  .page-footer__social {
+    margin-right: 82px;
   }
 }

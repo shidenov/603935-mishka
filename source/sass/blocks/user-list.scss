@@ -37,6 +37,10 @@
   }
 
 @media (min-width: $tablet) {
+  .user-list {
+    height: 100%;
+  }
+
   .user-list__item {
     border: none;
 
@@ -47,8 +51,8 @@
 
   .user-list__item:first-child {
     width: 83px;
-    border-left: 2px solid #ececec;
-    border-right: 2px solid #ececec;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
 
     & a {
       height: 88px;

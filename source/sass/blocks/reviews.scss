@@ -67,9 +67,10 @@
   }
 
   .reviews__list {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    padding: 80px 50px 46px 50px;
+    padding: 80px 50px 51px 50px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: top left;
@@ -96,12 +97,29 @@
 
   .reviews__write {
     order: -1;
+    width: 175px;
     align-self: flex-start;
   }
 
   .reviews__buttons {
+    position: absolute;
+    bottom: 35px;
+    right: 60px;
+    width: 138px;
     margin: 0;
   }
+
+  .reviews__prev,
+  .reviews__next {
+    width: 50px;
+    padding: 0;
+    border: none;
+  }
+
+  .reviews__prev {
+    margin-right: 37px;
+  }
+
 }
 
 @media (min-width: $desktop) {

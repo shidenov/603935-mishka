@@ -76,7 +76,7 @@
 
 @media (min-width: $tablet) {
   .about-us {
-    padding: 52px 50px 84px 50px;
+    padding: 52px 50px 83px 50px;
   }
 
   .about-us__list {
@@ -91,32 +91,62 @@
 
   .about-us__item {
     width: 50%;
+    padding-top: 111px;
     font-size: 20px;
     line-height: 22px;
 
     &--flower {
       order: 1;
+
+      &:before {
+        top: 50px;
+      }
     }
 
-    &--clew {
+    &--ball {
       order: 2;
+
+      &:before {
+        top: 53px;
+      }
     }
 
     &--money {
       order: 3;
+
+      &:before {
+        top: 58px;
+      }
     }
 
     &--rocket {
       order: 4;
+
+      &:before {
+        top: 61px;
+      }
     }
 
     &--heart {
       order: 5;
+
+      &:before {
+        top: 62px;
+      }
     }
 
-    &--prize {
+    &--gift {
       order: 6;
+
+      &:before {
+        top: 59px;
+      }
     }
+  }
+
+  .about-us__item:nth-child(1),
+  .about-us__item:nth-child(4) {
+    padding-top: 102px;
   }
 }
 

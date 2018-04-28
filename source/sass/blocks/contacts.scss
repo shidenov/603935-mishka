@@ -25,6 +25,7 @@
 
 .contacts__value {
   width: 180px;
+  font-style: normal;
 
   &--mail {
   border-bottom: 1px solid #62d1ba;
@@ -45,8 +46,11 @@
   .contacts__email-section {
     display: flex;
     justify-content: space-between;
-    padding-right: 38px;
     font-size: 17px;
+  }
+
+  .contacts__value {
+    width: 256px;
   }
 }
 
