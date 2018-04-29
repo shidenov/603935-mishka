@@ -1,18 +1,46 @@
 .production {
-  padding: 0 30px;
+  padding: 27px 30px 58px 27px;
 }
 
 .production__title {
+  position: relative;
+  margin: 0 0 26px 0;
+  padding-left: 90px;
   font-size: 17px;
   line-height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 35px;
+    width: 32px;
+    height: 28px;
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.production__image-wrapper {
+  margin-bottom: 32px;
+}
+
+.production__description-wrapper {
+  padding: 0 40px 32px 35px;
+  border-bottom: 1px solid #ececec;
 }
 
 .production__description {
+  margin: 0 0 30px 0;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   color: #444444;
+}
+
+.production__order {
+  width: 192px;
 }
 
 @media (min-width: $tablet) {

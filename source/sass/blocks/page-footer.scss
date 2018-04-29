@@ -7,6 +7,10 @@
   display: none;
 }
 
+.page-footer__logo-wrapper {
+  margin: 0;
+}
+
 @media (min-width: $tablet) {
   .page-footer {
     display: flex;
