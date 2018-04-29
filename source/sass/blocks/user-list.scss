@@ -44,34 +44,34 @@
   .user-list__item {
     border: none;
 
-    & a {
+    a {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      min-height: 100%;
       padding: 0;
     }
-  }
 
-  .user-list__item:first-child {
-    width: 83px;
-    border-left: 1px solid #ececec;
-    border-right: 1px solid #ececec;
+    &--search {
+      width: 83px;
+      border-left: 1px solid #ececec;
+      border-right: 1px solid #ececec;
 
-    & a {
-      height: 88px;
+      a {
+        justify-content: center;
+      }
     }
-  }
 
-  .user-list__item:last-child {
-    width: 264px;
+    &--cart {
+      a{
+        padding: 31px 0 31px 30px;
+      }
 
-    & a {
-      padding: 28px 0 30px 72px;
-    }
+      svg {
+        margin-right: 33px;
+      }
   }
-
-  .user-list__icon-cart {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-  }
+}
 
   .user-list__item-desc {
     display: none;

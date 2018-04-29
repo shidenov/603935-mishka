@@ -100,7 +100,6 @@
   }
 
   .main-nav__logo {
-    margin-right: 209px;
     border: none;
   }
 }
@@ -113,9 +112,16 @@
 
   .main-nav__list {
     order: -1;
+    width: 400px;
   }
 
   .main-nav__list-user {
     order: 0;
+    justify-content: flex-end;
+    width: 400px;
+  }
+
+  .main-nav__main-extra-menu {
+    margin-top: 23px;
   }
 }

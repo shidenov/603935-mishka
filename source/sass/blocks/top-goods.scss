@@ -158,12 +158,29 @@
     padding: 127px 0 73px 0;
   }
 
+  .top-goods__wrapper {
+    padding-left: 225px;
+  }
+
   .top-goods__title {
     font-size: 53px;
     line-height: 57px;
   }
 
   .top-goods__subtitle {
+    position: absolute;
+    left: 0;
     order: -1;
+    width: 225px;
+    padding-left: 97px;
+    padding-right: 58px;
+  }
+
+  .top-goods__description {
+    margin-bottom: 66px;
+  }
+
+  .top-goods__description-section {
+    margin-bottom: 109px;
   }
 }

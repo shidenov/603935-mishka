@@ -11,15 +11,20 @@
   .page-footer {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 51px 50px;
   }
 
   .page-footer__logo {
     display: block;
-    margin-right: 160px;
   }
 
-  .page-footer__social {
-    margin-right: 82px;
+  .page-footer__logo-wrapper,
+  .page-footer__copyright {
+    width: 350px;
+  }
+
+  .page-footer__copyright {
+    text-align: right;
   }
 }
