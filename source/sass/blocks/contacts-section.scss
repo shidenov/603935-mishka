@@ -43,7 +43,7 @@
 
   .contacts-section__map {
     position: absolute;
-    right: 400px;
+    right: 200px;
     top: 100px;
   }
 
@@ -54,5 +54,9 @@
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .contacts-section__write {
+    margin: 0;
   }
 }
