@@ -2,10 +2,14 @@
   display: inline-block;
   width: 260px;
   padding: 15px 10px;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 16px;
   color: #444444;
   text-transform: uppercase;
   text-align: center;
   border: 2px solid #444444;
+  background-color: transparent;
 
   &:hover {
     color: #ffffff;

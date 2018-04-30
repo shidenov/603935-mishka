@@ -1,24 +1,142 @@
 .form {
-  padding: 0 30px;
+  padding: 0 30px 55px 30px;
 }
 
 .form__group {
+  margin: 0 0 31px 0;
   padding: 0;
   border: none;
-  border-top: 1px solid #62d1ba;
+
+  &:first-child {
+    margin: 0 0 42px 0;
+  }
 }
 
 .form__legend {
+  position: relative;
+  padding: 0;
   line-height: 16px;
   color: #62d1ba;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    border-top: 1px solid #62d1ba;
+    top: 50%;
+    left: 0;
+  }
+}
+
+.form__sublegend {
+    padding-right: 20px;
+    background: #fff;
+    position: relative;
 }
 
 .form__label {
+  position: relative;
+  display: block;
   line-height: 18px;
+
+  &--radio {
+    padding: 30px 0 0 62px;
+  }
+
+  &--checkbox {
+    padding: 35px 0 10px 62px;
+  }
+
+  &--radio::before,
+  &--checkbox::before {
+    content: "";
+    position: absolute;
+    cursor: pointer;
+    top: 25px;
+    left: 0;
+    width: 37px;
+    height: 37px;
+  }
+
+  &--radio::before {
+    border: 2px solid #444444;
+    border-radius: 50%;
+  }
+
+  &--checkbox::before {
+    border: 2px solid #444444;
+  }
+
+  &--input {
+    margin-top: 22px;
+  }
+}
+
+.form__radio-input:checked + .form__label--radio::after{
+  content: "";
+  position: absolute;
+  cursor: pointer;
+  top: 44px;
+  left: 19px;
+  width: 16px;
+  height: 16px;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background: #56c3b2;
+}
+
+.form__checkbox-input:checked + .form__label--checkbox::after {
+    content: "";
+    position: absolute;
+    cursor: pointer;
+    background-image: url("../img/icon-tick.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 28px;
+    left: 9px;
+    width: 24px;
+    height: 30px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 18px 0;
+  font-family: "OpenSans", "Arial", sans-serif;
+  line-height: 18px;
+  font-size: 17px;
+  font-weight: 100;
+  border: none;
+  border-bottom: 2px solid #221f1f;
+}
+
+.form__input--tel {
+  margin-bottom: 34px;
+}
+
+.form__input--tel,
+.form__input--email {
+  padding: 22px 0 20px 0;
+}
+
+.form__legend--textarea {
+  margin-bottom: 24px;
+}
+
+.form__input--textarea {
+  min-height: 142px;
+  padding: 13px;
+  border: 2px solid #221f1f;
+  resize: none;
+}
+
+.form__group--textarea {
+  margin: 0 0 17px 0;
 }
 
 .form__required {
+  display: inline-block;
+  margin-bottom: 31px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;

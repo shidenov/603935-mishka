@@ -3,9 +3,17 @@
   margin: 0 auto;
 }
 
+.container--production {
+  padding: 0 30px 58px 27px;
+}
+
 @media (min-width: $tablet) {
   .container {
     width: 768px;
+  }
+
+  .container--production {
+    padding: 0 50px 63px 50px;
   }
 }
 

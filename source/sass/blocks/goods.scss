@@ -6,15 +6,17 @@
 
 .goods__item {
   margin-bottom: 30px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 @media (min-width: $tablet) {
   .goods__list {
     padding: 0 50px;
+  }
+
+  .goods__item {
+    width: 667px;
+    min-height: 333px;
+    margin-bottom: 54px;
   }
 }
 
@@ -22,6 +24,11 @@
   .goods__list {
     display: flex;
     justify-content: space-between;
-    padding: 0 100px;
+    margin-bottom: 57px;
+  }
+
+  .goods__item {
+    margin-bottom: 0;
   }
 }
+

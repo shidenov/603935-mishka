@@ -1,5 +1,6 @@
 .production {
-  padding: 27px 30px 58px 27px;
+  padding-top: 27px;
+  border: 1px solid red;
 }
 
 .production__title {
@@ -22,7 +23,7 @@
 }
 
 .production__image-wrapper {
-  margin-bottom: 32px;
+  margin: 0 0 32px 0;
 }
 
 .production__description-wrapper {
@@ -47,15 +48,32 @@
   .production {
     display: flex;
     flex-direction: column;
-    padding: 0 50px;
+    padding-top: 0;
   }
 
   .production__image-wrapper {
     order: -1;
+    margin: 0 0 41px 0;
   }
 
   .production__title {
+    margin: 0 0 40px 0;
+    padding-left: 107px;
     font-size: 20px;
+
+    &::before {
+      top: -5px;
+      left: 42px;
+    }
+
+    br {
+      display: none;
+    }
+  }
+
+  .production__description-wrapper {
+    padding: 0 40px 45px 40px;
+    border: none;
   }
 
   .production__description {
