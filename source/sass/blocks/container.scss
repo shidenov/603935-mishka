@@ -3,8 +3,9 @@
   margin: 0 auto;
 }
 
-.container--production {
-  padding: 0 30px 58px 27px;
+.container--with-paddings {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 @media (min-width: $tablet) {
@@ -12,13 +13,20 @@
     width: 768px;
   }
 
-  .container--production {
-    padding: 0 50px 63px 50px;
+  .container--with-paddings {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
 @media (min-width: $desktop) {
   .container {
-    width: 1150px;
+    width: 1050px;
   }
+
+  .container--with-paddings {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 }

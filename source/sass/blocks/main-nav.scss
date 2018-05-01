@@ -78,16 +78,13 @@
   .main-nav {
     height: 88px;
     padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .main-nav__toggle {
     display: none;
-  }
-
-  .main-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .main-nav__list {
@@ -118,6 +115,10 @@
 }
 
 @media (min-width: $desktop) {
+  .main-nav {
+    padding: 0;
+  }
+
   .main-nav__main-extra-menu {
     display: flex;
     order: 2;

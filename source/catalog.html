@@ -10,7 +10,7 @@
   <body>
 
     <header class="page-header">
-      <div class="container">
+      <div class="container container--with-paddings">
         <nav class="main-nav main-nav--nojs main-nav--closed">
           <a class="main-nav__logo" href="index.html">
             <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин:Мишка">
@@ -47,13 +47,11 @@
       </div>
     </header>
 
-    <main class="page-main">
+    <main class="page-main page-main--catalog">
 
-      <section class="goods">
-
-        <h1 class="inner-page-title">Каталог товаров</h1>
-
-        <div class="container">
+      <h1 class="inner-page-title">Каталог товаров</h1>
+      <div class="container">
+        <section class="goods">
           <ul class="goods__list">
             <li class="goods__item good-card">
               <a class="good-card__image-wrapper" href="#">
@@ -110,13 +108,8 @@
               </div>
             </li>
           </ul>
+        </section>
 
-        </div>
-
-      </section>
-
-
-      <div class="container container--production">
         <section class="production">
           <h2 class="production__title">Процесс<br> производства</h2>
           <p class="production__image-wrapper"><img class="production__image" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Процесс производства"></p>
@@ -125,6 +118,7 @@
             <a class="production__order button button--stretch">Сделать заказ</a>
           </div>
         </section>
+
       </div>
 
     </main>

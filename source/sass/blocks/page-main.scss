@@ -1,0 +1,15 @@
+.page-main--catalog {
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet) {
+  .page-main--catalog {
+    margin-bottom: 53px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-main--catalog {
+    margin-bottom: 7px;
+  }
+}

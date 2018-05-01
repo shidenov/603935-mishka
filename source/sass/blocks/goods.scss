@@ -1,6 +1,6 @@
 .goods__list {
   margin: 0;
-  padding: 0 30px;
+  padding: 0;
   list-style: none;
 }
 
@@ -9,10 +9,6 @@
 }
 
 @media (min-width: $tablet) {
-  .goods__list {
-    padding: 0 50px;
-  }
-
   .goods__item {
     width: 667px;
     min-height: 333px;
