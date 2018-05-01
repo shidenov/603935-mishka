@@ -12,6 +12,10 @@
   }
 }
 
+.form-description br {
+  display: none;
+}
+
 .form__legend {
   position: relative;
   padding: 0;
@@ -151,6 +155,10 @@
 
   .form-description {
     margin: 0;
+
+    br {
+      display: none;
+    }
   }
 
   .form__group {
@@ -318,5 +326,51 @@
 @media (min-width: $desktop) {
   .form__inner-section {
     justify-content: flex-start;
+    padding: 0 50px 0 115px;
+  }
+
+  .form-description {
+    padding: 0 225px;
+
+    br {
+      display: block;
+    }
+  }
+
+  .form__legend {
+    width: 111px;
+  }
+
+  .form__group {
+
+    &--type {
+      padding: 62px 0 68px 0;
+    }
+
+    &--color {
+      padding: 50px 0 50px 0;
+      background-color: #f1f1f1;
+    }
+
+    &--initials {
+      padding: 66px 0 50px 0;
+
+      .form__legend {
+        padding: 0;
+      }
+    }
+
+    &--tel {
+      padding: 66px 0 50px 0;
+      background-color: #f1f1f1;
+    }
+
+    &--textarea {
+      padding: 50px 0 53px 0;
+    }
+
+    &--submit-section {
+      padding: 0 0 51px 0;
+    }
   }
 }

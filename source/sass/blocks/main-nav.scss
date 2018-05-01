@@ -1,5 +1,19 @@
+.main-nav {
+  text-align: center;
+}
+
 .main-nav__main-extra-menu {
   display: none;
+}
+
+.main-nav__list,
+.main-nav__list-user,
+.main-nav__main-extra-menu {
+  text-align: left;
+}
+
+.main-nav__list {
+  border-top: 1px solid #ececec;
 }
 
 .main-nav__description {
@@ -7,10 +21,9 @@
 }
 
 .main-nav__logo {
-  display: block;
+  display: inline-block;
   padding: 21px 0 22px 0px;
   text-align: center;
-  border-bottom: 1px solid #ececec;
 }
 
 @media (max-width: $mobile) {
