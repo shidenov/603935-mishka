@@ -7,7 +7,7 @@
   padding: 0;
   border: none;
 
-  &:first-child {
+  &--type {
     margin: 0 0 42px 0;
   }
 }
@@ -55,8 +55,8 @@
     cursor: pointer;
     top: 25px;
     left: 0;
-    width: 37px;
-    height: 37px;
+    width: 40px;
+    height: 40px;
   }
 
   &--radio::before {
@@ -71,14 +71,18 @@
   &--input {
     margin-top: 22px;
   }
+
+  &--textarea {
+    margin: 0 0 17px 0;
+  }
 }
 
-.form__radio-input:checked + .form__label--radio::after{
+.form__input--radio:checked + .form__label--radio::after{
   content: "";
   position: absolute;
   cursor: pointer;
-  top: 44px;
-  left: 19px;
+  top: 45px;
+  left: 20px;
   width: 16px;
   height: 16px;
   transform: translate(-50%,-50%);
@@ -86,7 +90,7 @@
   background: #56c3b2;
 }
 
-.form__checkbox-input:checked + .form__label--checkbox::after {
+.form__input--checkbox:checked + .form__label--checkbox::after {
     content: "";
     position: absolute;
     cursor: pointer;
@@ -108,30 +112,26 @@
   font-weight: 100;
   border: none;
   border-bottom: 2px solid #221f1f;
-}
 
-.form__input--tel {
-  margin-bottom: 34px;
-}
+  &--tel {
+    margin-bottom: 34px;
+  }
 
-.form__input--tel,
-.form__input--email {
-  padding: 22px 0 20px 0;
+  &--tel,
+  &--email {
+    padding: 22px 0 20px 0;
+  }
+
+  &--textarea {
+    min-height: 142px;
+    padding: 13px;
+    border: 2px solid #221f1f;
+    resize: none;
+  }
 }
 
 .form__legend--textarea {
   margin-bottom: 24px;
-}
-
-.form__input--textarea {
-  min-height: 142px;
-  padding: 13px;
-  border: 2px solid #221f1f;
-  resize: none;
-}
-
-.form__group--textarea {
-  margin: 0 0 17px 0;
 }
 
 .form__required {
@@ -146,26 +146,162 @@
 
 @media (min-width: $tablet) {
   .form {
-    padding: 0 50px;
+    padding: 0;
+  }
+
+  .form-description {
+    margin: 0;
   }
 
   .form__group {
+    margin: 0;
     border: none;
+
+    &--type {
+      padding: 62px 50px 68px 50px;
+    }
+
+    &--color {
+      padding: 50px 50px 50px 50px;
+      background-color: #f1f1f1;
+    }
+
+    &--initials {
+      padding: 66px 50px 50px 50px;
+
+      .form__legend {
+        padding: 0;
+      }
+    }
+
+    &--tel {
+      padding: 66px 50px 50px 50px;
+      background-color: #f1f1f1;
+    }
+
+    &--textarea {
+      padding: 50px 50px 53px 50px;
+    }
+
+    &--submit-section {
+      padding: 0 50px 51px 50px;
+    }
   }
 
   .form__inner-section {
     display: flex;
-    justify-content: space-between;
   }
 
   .form__input-section {
     display: flex;
     flex-direction: column;
+    width: 500px;
+
+    &--color {
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+  }
+
+  .form__legend {
+    align-self: flex-start;
+    width: 167px;
+    padding: 15px 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .form__sublegend {
+    background-color: transparent;
   }
 
   .form__label {
+    padding: 15px 0 15px 81px;
     font-size: 19px;
     line-height: 18px;
+
+    &--radio {
+      margin-bottom: 25px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &--checkbox {
+      margin-bottom: 24px;
+      width: 50%;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &--radio::before,
+    &--checkbox::before {
+      top: 1px;
+      left: -1px;
+      width: 53px;
+      height: 53px;
+    }
+
+    &--input {
+      padding: 0;
+      margin: 0 25px 0 0;
+    }
+
+  }
+
+  .form__input--radio:checked + .form__label--radio::after {
+    top: 27px;
+    left: 25px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .form__input--checkbox:checked + .form__label--checkbox::after{
+    top: 16px;
+    left: 10px;
+    width: 33px;
+    height: 22px;
+  }
+
+  .form__label-wrapper {
+    display: flex;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  .form__input {
+    padding: 0 17px 15px 17px;
+    font-size: 19px;
+    line-height: 18px;
+    background-color: transparent;
+
+    &--tel {
+      width: 500px;
+      margin-bottom: 40px;
+    }
+
+    &--email {
+      width: 500px;
+    }
+
+    &--textarea {
+      width: 500px;
+      padding: 13px;
+    }
+  }
+
+  .form__group--submit-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .form__order {
@@ -173,6 +309,7 @@
   }
 
   .form__required {
+    margin-bottom: 0;
     font-size: 17px;
     line-height: 30px;
   }

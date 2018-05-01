@@ -51,79 +51,87 @@
 
       <h1 class="inner-page-title">Вязание на заказ</h1>
 
-      <div class="container">
+
 
         <p class="form-description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--type">
             <div class="form__inner-section">
               <legend class="form__legend">
                 <span class="form__sublegend">Тип</span>
               </legend>
 
               <div class="form__input-section">
-                <input class="form__radio-input visually-hidden" type="radio" name="radio" id="accessory" value="accessory" checked>
+                <input class="form__input--radio visually-hidden" type="radio" name="radio" id="accessory" value="accessory" checked>
                 <label class="form__label form__label--radio" for="accessory">Аксессуар для интерьера</label>
 
-                <input class="form__radio-input visually-hidden" type="radio" name="radio" id="toy" value="toy">
+                <input class="form__input--radio visually-hidden" type="radio" name="radio" id="toy" value="toy">
                 <label class="form__label form__label--radio" for="toy">Детская игрушка</label>
               </div>
 
             </div>
           </fieldset>
 
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--color">
             <div class="form__inner-section">
               <legend class="form__legend">
                 <span class="form__sublegend">Цвет</span>
               </legend>
 
-              <div class="form__input-section">
-                <input class="form__checkbox-input visually-hidden" type="checkbox" name="white" id="white" checked>
+              <div class="form__input-section form__input-section--color">
+                <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="white" id="white" checked>
                 <label class="form__label form__label--checkbox" for="white">Белый</label>
 
-                <input class="form__checkbox-input visually-hidden" type="checkbox" name="grey" id="grey" checked>
+                <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="grey" id="grey" checked>
                 <label class="form__label form__label--checkbox" for="grey">Серый</label>
 
-                <input class="form__checkbox-input visually-hidden" type="checkbox" name="tiffani" id="tiffani">
+                <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="tiffani" id="tiffani">
                 <label class="form__label form__label--checkbox" for="tiffani">«Тиффани»</label>
 
-                <input class="form__checkbox-input visually-hidden" type="checkbox" name="black" id="black">
+                <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="black" id="black">
                 <label class="form__label form__label--checkbox" for="black">Черный</label>
 
-                <input class="form__checkbox-input visually-hidden" type="checkbox" name="pink" id="pink">
+                <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="pink" id="pink">
                 <label class="form__label form__label--checkbox" for="pink">Розовый</label>
 
-                <input class="form__checkbox-input visually-hidden" type="checkbox" name="orange" id="orange">
+                <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="orange" id="orange">
                 <label class="form__label form__label--checkbox" for="orange">Оранжевый</label>
               </div>
 
             </div>
           </fieldset>
 
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--initials">
             <div class="form__inner-section">
               <legend class="form__legend">
                 <span class="form__sublegend">ФИО</span>
               </legend>
 
               <div class="form__input-section">
-                <label class="form__label form__label--input" for="name">Имя:</label>
-                <input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя*">
 
-                <label class="form__label form__label--input" for="name">Фамилия:</label>
-                <input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
+                <div class="form__label-wrapper">
+                  <label class="form__label form__label--input" for="name">Имя:</label>
+                  <input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя*">
+                </div>
 
-                <label class="form__label form__label--input" for="name">Отчество:</label>
-                <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Отчество если желаете">
+                <div class="form__label-wrapper">
+                  <label class="form__label form__label--input" for="surname">Фамилия:</label>
+                  <input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
+                </div>
+
+                <div class="form__label-wrapper">
+                  <label class="form__label form__label--input" for="patronymic">Отчество:</label>
+                  <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Отчество если желаете">
+                </div>
+
               </div>
 
             </div>
           </fieldset>
 
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--tel">
             <div class="form__inner-section">
               <div class="form__legend">
                 <label class="form__sublegend" for="tel">ТЕЛ</label>
@@ -148,13 +156,13 @@
             </div>
           </div>
 
-          <div class="form__inner-section">
+          <div class="form__group form__group--submit-section">
             <span class="form__required">*Поля обязательны для заполнения</span>
             <button class="form__order button" type="submit">Отправить заказ</button>
           </div>
 
         </form>
-      </div>
+
     </main>
 
     <div class="container">
