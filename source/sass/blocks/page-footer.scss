@@ -1,5 +1,4 @@
 .page-footer {
-  padding: 0 30px;
   background-color: #f1f1f1;
 }
 
@@ -13,10 +12,14 @@
 
 @media (min-width: $tablet) {
   .page-footer {
+    padding-top: 51px;
+    padding-bottom: 51px;
+  }
+
+  .page-footer__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 51px 50px;
   }
 
   .page-footer__logo {
