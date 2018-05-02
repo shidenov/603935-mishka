@@ -38,7 +38,13 @@
 @media (min-width: $desktop) {
   .categories-wrapper__title {
     margin-bottom: 355px;
+    padding: 0;
     font-size: 53px;
     line-height: 57px;
   }
+
+  .categories-wrapper__list {
+    padding: 0;
+  }
+
 }

@@ -89,8 +89,9 @@
 
   .main-nav__list {
     display: flex;
-    margin-right: auto;
     order: 2;
+    margin-right: auto;
+    border: none;
   }
 
   .main-nav__list-user {
