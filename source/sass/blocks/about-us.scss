@@ -90,7 +90,7 @@
     &--flower {
       order: 1;
 
-      &:before {
+      &::before {
         top: 50px;
       }
     }
@@ -98,7 +98,7 @@
     &--ball {
       order: 2;
 
-      &:before {
+      &::before {
         top: 53px;
       }
     }
@@ -106,7 +106,7 @@
     &--money {
       order: 3;
 
-      &:before {
+      &::before {
         top: 58px;
       }
     }
@@ -114,7 +114,7 @@
     &--rocket {
       order: 4;
 
-      &:before {
+      &::before {
         top: 61px;
       }
     }
@@ -122,7 +122,7 @@
     &--heart {
       order: 5;
 
-      &:before {
+      &::before {
         top: 62px;
       }
     }
@@ -130,7 +130,7 @@
     &--gift {
       order: 6;
 
-      &:before {
+      &::before {
         top: 59px;
       }
     }
