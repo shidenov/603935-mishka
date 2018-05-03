@@ -1,5 +1,22 @@
+.page-header__logo-image {
+  width: 86px;
+  height: 35px;
+}
+
 @media (min-width: $tablet) {
   .page-header {
     border-bottom: 1px solid #ececec;
+
+    &__logo-image {
+      width: 112px;
+      height: 46px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-header__logo-image {
+    width: 149px;
+    height: 72px;
   }
 }
