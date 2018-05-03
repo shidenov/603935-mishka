@@ -22,12 +22,12 @@
 
 .main-nav__logo {
   display: inline-block;
-  padding: 21px 0 22px 0px;
+  padding: 21px 0 22px 0;
   text-align: center;
 }
 
 @media (max-width: $mobile) {
-  .main-nav{
+  .main-nav {
     position: relative;
   }
 
@@ -56,7 +56,7 @@
     border: none;
   }
 
-    .main-nav--closed .main-nav__list {
+  .main-nav--closed .main-nav__list {
     display: none;
   }
 
@@ -123,6 +123,7 @@
   .main-nav__main-extra-menu {
     display: flex;
     order: 2;
+    margin-top: 23px;
   }
 
   .main-nav__list {
@@ -134,9 +135,5 @@
     order: 0;
     justify-content: flex-end;
     width: 400px;
-  }
-
-  .main-nav__main-extra-menu {
-    margin-top: 23px;
   }
 }

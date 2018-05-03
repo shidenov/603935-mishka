@@ -20,9 +20,10 @@
 }
 
 @media (min-width: $tablet) {
-  .categories-wrapper__image-container{
+  .categories-wrapper__image-container {
     padding-top: 157px;
   }
+
   .categories-wrapper__title {
     margin: 0 0 375px 0;
     padding: 0 50px;
@@ -46,5 +47,4 @@
   .categories-wrapper__list {
     padding: 0;
   }
-
 }

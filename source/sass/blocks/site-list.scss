@@ -4,24 +4,24 @@
   list-style: none;
 }
 
-  .site-list__item {
-    border-bottom: 1px solid #ececec;
+.site-list__item {
+  border-bottom: 1px solid #ececec;
+}
+
+.site-list__item a {
+  display: block;
+  padding: 30px 30px 30px 76px;
+  color: #000000;
+  line-height: 24px;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
   }
 
-  .site-list__item a {
-    display: block;
-    padding: 30px 30px 30px 76px;
-    color: #000000;
-    line-height: 24px;
-
-    &:hover {
-      color: rgba(0, 0, 0, 0.6);
-    }
-
-    &:active {
-      color: rgba(0, 0, 0, 0.3);
-    }
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
   }
+}
 
 @media (min-width: $tablet) {
   .site-list {
