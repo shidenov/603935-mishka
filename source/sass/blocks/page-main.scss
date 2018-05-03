@@ -24,7 +24,19 @@
 }
 
 .page-main--catalog {
+  margin-bottom: 58px;
+}
+
+.page-main__goods {
   margin-bottom: 30px;
+}
+
+.page-main__form {
+  margin-bottom: 55px;
+}
+
+.page-main__form-description {
+  margin-bottom: 28px;
 }
 
 @media (min-width: $tablet) {
@@ -54,8 +66,21 @@
   }
 
   .page-main--catalog {
+    margin-bottom: 63px;
+  }
+
+  .page-main__goods {
     margin-bottom: 53px;
   }
+
+  .page-main__form {
+    margin-bottom: 50px;
+  }
+
+  .page-main__form-description {
+    margin-bottom: 60px;
+  }
+
 }
 
 @media (min-width: $desktop) {
@@ -81,6 +106,11 @@
   }
 
   .page-main--catalog {
+    margin-bottom: 105px;
+  }
+
+  .page-main__goods {
     margin-bottom: 57px;
   }
+
 }

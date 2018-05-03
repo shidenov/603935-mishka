@@ -47,18 +47,18 @@
       </div>
     </header>
 
-    <main class="page-main">
+    <main class="page-main page-main__form">
 
       <h1 class="inner-page-title">Вязание на заказ</h1>
 
-        <div>
-          <p class="form-description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму<br> заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <div class="form-description page-main__form-description container container--with-paddings">
+          <p class="form-description__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму<br> заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         </div>
 
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
           <fieldset class="form__group form__group--type">
-            <div class="form__inner-section container">
+            <div class="form__inner-section container container--with-paddings">
               <legend class="form__legend">
                 <span class="form__sublegend">Тип</span>
               </legend>
@@ -75,7 +75,7 @@
           </fieldset>
 
           <fieldset class="form__group form__group--color">
-            <div class="form__inner-section container">
+            <div class="form__inner-section container container--with-paddings">
               <legend class="form__legend">
                 <span class="form__sublegend">Цвет</span>
               </legend>
@@ -104,7 +104,7 @@
           </fieldset>
 
           <fieldset class="form__group form__group--initials">
-            <div class="form__inner-section container">
+            <div class="form__inner-section container container--with-paddings">
               <legend class="form__legend">
                 <span class="form__sublegend">ФИО</span>
               </legend>
@@ -132,14 +132,14 @@
           </fieldset>
 
           <fieldset class="form__group form__group--tel">
-            <div class="form__inner-section container">
+            <div class="form__inner-section container container--with-paddings">
               <div class="form__legend">
                 <label class="form__sublegend" for="tel">ТЕЛ</label>
               </div>
               <input class="form__input form__input--tel" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*">
             </div>
 
-            <div class="form__inner-section container">
+            <div class="form__inner-section container container--with-paddings">
               <div class="form__legend">
                 <label class="form__sublegend" for="email">E-MAIL</label>
               </div>
@@ -148,7 +148,7 @@
           </fieldset>
 
           <div class="form__group form__group--textarea">
-            <div class="form__inner-section container">
+            <div class="form__inner-section container container--with-paddings">
               <div class="form__legend form__legend--textarea">
                 <label class="form__sublegend" for="textarea">ДОП</label>
               </div>
@@ -156,7 +156,7 @@
             </div>
           </div>
 
-          <div class="form__group form__group--submit-section">
+          <div class="form__submit-section container container--with-paddings">
             <span class="form__required">*Поля обязательны для заполнения</span>
             <button class="form__order button" type="submit">Отправить заказ</button>
           </div>
@@ -167,9 +167,9 @@
 
       <footer class="page-footer">
         <div class="container container--with-paddings page-footer__wrapper">
-          <p class="page-footer__logo-wrapper">
+          <a class="page-footer__logo-wrapper" href="index.html">
             <img class="page-footer__logo" src="img/logo-mobile.svg" width="" height="" alt="логотип">
-          </p>
+          </a>
 
           <div class="page-footer__social social">
             <ul class="social__list">
