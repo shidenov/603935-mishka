@@ -6,6 +6,22 @@
   list-style: none;
 }
 
+.main-extra-menu__item {
+  margin-right: 60px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 .main-extra-menu__item a {
   color: #000000;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }

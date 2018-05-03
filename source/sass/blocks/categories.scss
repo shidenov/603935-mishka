@@ -13,9 +13,26 @@
 }
 
 .categories__link {
+  position: relative;
   display: block;
   padding: 28px 30px 30px 30px;
   color: #ffffff;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.categories__icon-iterior {
+  position: absolute;
+  top: 23px;
+  right: 35px;
+}
+
+.categories__icon-toy {
+  position: absolute;
+  top: 21px;
+  right: 27px;
 }
 
 .categories__description {
@@ -34,6 +51,16 @@
 
   .categories__link {
     padding: 33px 0 32px 35px;
+  }
+
+  .categories__icon-iterior {
+    top: 30px;
+    right: 40px;
+  }
+
+  .categories__icon-toy {
+    top: 30px;
+    right: 33px;
   }
 
   .categories__description {

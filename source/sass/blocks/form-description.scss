@@ -1,5 +1,5 @@
-.form-description {
-  padding: 0 30px;
+.form-description__text {
+  margin: 0;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -7,10 +7,23 @@
   color: #444444;
 }
 
+.form-description__text br {
+  display: none;
+}
+
 @media (min-width: $tablet) {
-  .form-description {
-    padding: 0 50px;
+  .form-description__text {
     font-size: 17px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form-description__text {
+    padding-left: 175px;
+  }
+
+  .form-description__text br {
+    display: block;
   }
 }

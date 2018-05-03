@@ -1,7 +1,3 @@
-.about-us {
-  padding: 29px 30px 62px 30px;
-}
-
 .about-us__title {
   margin: 0;
   padding: 0;
@@ -16,14 +12,65 @@
 }
 
 .about-us__item {
-  padding-top: 124px;
+  position: relative;
+  padding-top: 86px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+
+  &--flower::before {
+    top: 33px;
+    left: 8px;
+    width: 32px;
+    height: 37px;
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--money::before {
+    top: 30px;
+    left: 0;
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/icon-feature-money.svg");
+  }
+
+  &--heart::before {
+    top: 35px;
+    left: 7px;
+    width: 34px;
+    height: 28px;
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--ball::before {
+    top: 32px;
+    left: 3px;
+    width: 35px;
+    height: 34px;
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--rocket::before {
+    top: 34px;
+    left: -6px;
+    width: 55px;
+    height: 23px;
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--gift::before {
+    top: 31px;
+    left: 3px;
+    width: 33px;
+    height: 32px;
+    background-image: url("../img/icon-feature-gift.svg");
+  }
 }
 
 @media (min-width: $tablet) {
-  .about-us {
-    padding: 52px 50px 84px 50px;
-  }
-
   .about-us__list {
     display: flex;
     flex-wrap: wrap;
@@ -36,38 +83,63 @@
 
   .about-us__item {
     width: 50%;
+    padding-top: 111px;
     font-size: 20px;
     line-height: 22px;
 
     &--flower {
       order: 1;
+
+      &::before {
+        top: 50px;
+      }
     }
 
-    &--clew {
+    &--ball {
       order: 2;
+
+      &::before {
+        top: 53px;
+      }
     }
 
     &--money {
       order: 3;
+
+      &::before {
+        top: 58px;
+      }
     }
 
     &--rocket {
       order: 4;
+
+      &::before {
+        top: 61px;
+      }
     }
 
     &--heart {
       order: 5;
+
+      &::before {
+        top: 62px;
+      }
     }
 
-    &--prize {
+    &--gift {
       order: 6;
+
+      &::before {
+        top: 59px;
+      }
     }
   }
 }
 
 @media (min-width: $desktop) {
   .about-us {
-    padding: 63px 50px 91px 50px;
+    padding-left: 175px;
   }
 
   .about-us__title {

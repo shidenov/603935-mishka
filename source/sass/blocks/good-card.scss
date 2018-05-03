@@ -1,9 +1,33 @@
+.good-card {
+  border-bottom: 1px solid #ececec;
+}
+
+.good-card__image-wrapper {
+  display: inline-block;
+}
+
+.good-card__description {
+  padding: 28px 28px 0 28px;
+}
+
 .good-card__link {
+  display: inline-block;
+  margin-bottom: 15px;
   line-height: 24px;
   color: #000000;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .good-card__value {
+  display: inline-block;
+  margin-bottom: 26px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 30px;
@@ -12,7 +36,13 @@
 }
 
 .good-card__price-basket {
+  display: flex;
+  justify-content: space-between;
+  width: 205px;
+  min-height: 73px;
   margin: 0;
+  padding: 27px 0 28px 0;
+  border-top: 1px solid #ececec;
 }
 
 .good-card__price {
@@ -23,11 +53,16 @@
 @media (min-width: $tablet) {
   .good-card {
     display: flex;
+    border: 1px solid #ececec;
   }
 
   .good-card__description {
     display: flex;
     flex-direction: column;
+  }
+
+  .good-card__price-basket {
+    width: 270px;
   }
 
   .good-card__link {
@@ -53,5 +88,10 @@
 
   .good-card__description {
     min-height: 199px;
+    padding: 28px 31px 0 28px;
+  }
+
+  .good-card__price-basket {
+    width: 100%;
   }
 }

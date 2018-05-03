@@ -1,17 +1,12 @@
-.top-goods {
-  padding: 30px 0 36px 0;
-  border-bottom: 6px solid #f2f2f2;
-}
-
-.top-goods__wrapper {
-  padding: 0 30px;
-}
-
 .top-goods__title {
+  margin: 0 0 6px 0;
   padding: 0;
-  margin: 0 0 30px 0;
   font-size: 25px;
   line-height: 30px;
+}
+
+.top-goods__title-section {
+  margin: 0 0 30px 0;
 }
 
 .top-goods__subtitle {
@@ -32,18 +27,34 @@
   color: #444444;
 }
 
+.top-goods__description {
+  margin-bottom: 18px;
+}
+
 .top-goods__list {
-  margin: 0 0 28px 0;
   border-collapse: collapse;
 }
 
-.top-goods__description {
-  margin-bottom: 21px;
+.top-goods__list td:first-child {
+  width: 68px;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.top-goods__list td:last-child {
+  width: 193px;
+}
+
+.top-goods__description-section {
+  margin-bottom: 28px;
 }
 
 .top-goods__property,
 .top-goods__value {
   padding: 13px 0 11px 0;
+}
+
+.top-goods__list tr {
   border-bottom: 1px solid #ececec;
 }
 
@@ -51,29 +62,33 @@
   margin-bottom: 28px;
 }
 
+.top-goods__image-wrapper {
+  margin: 0;
+}
+
+.top-goods__price-section {
+  text-align: center;
+}
+
 .top-goods__price {
   display: inline-block;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
   line-height: 24px;
   color: #444444;
 }
 
 @media (min-width: $tablet) {
-  .top-goods {
-    padding: 50px 0 53px 0;
-  }
-
   .top-goods__wrapper {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 0 50px;
   }
 
   .top-goods__title-section {
     display: flex;
-    margin-bottom: 36px;
+    align-items: center;
+    margin-bottom: 55px;
   }
 
   .top-goods__title {
@@ -88,6 +103,7 @@
     margin-right: 20px;
     font-size: 17px;
     line-height: 17px;
+    text-align: center;
   }
 
   .top-goods__description-section,
@@ -96,7 +112,7 @@
   }
 
   .top-goods__description {
-    margin-bottom: 54px;
+    margin-bottom: 52px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -107,7 +123,7 @@
   }
 
   .top-goods__description-section {
-    margin-bottom: 62px;
+    margin-bottom: 58px;
   }
 
   .top-goods__image-description {
@@ -117,14 +133,15 @@
   }
 
   .top-goods__price {
+    margin-bottom: 35px;
     font-size: 20px;
     line-height: 24px;
   }
 }
 
 @media (min-width: $desktop) {
-  .top-goods {
-    padding: 127px 0 73px 0;
+  .top-goods__wrapper {
+    padding-left: 175px;
   }
 
   .top-goods__title {
@@ -133,6 +150,19 @@
   }
 
   .top-goods__subtitle {
+    position: absolute;
+    left: 0;
     order: -1;
+    width: 175px;
+    padding-left: 47px;
+    padding-right: 56px;
+  }
+
+  .top-goods__description {
+    margin-bottom: 66px;
+  }
+
+  .top-goods__description-section {
+    margin-bottom: 109px;
   }
 }

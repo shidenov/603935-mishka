@@ -1,4 +1,23 @@
 .copyright {
+  min-height: 79px;
+  padding: 22px 39px 23px 39px;
   font-size: 19px;
   line-height: 18px;
+  vertical-align: middle;
+}
+
+.copyright__link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.copyright__development {
+  margin-right: 30px;
+  color: #000000;
+}
+
+@media (min-width: $tablet) {
+  .copyright {
+    padding: 22px 0 23px 0;
+  }
 }

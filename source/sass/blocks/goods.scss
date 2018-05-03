@@ -1,19 +1,36 @@
 .goods__list {
   margin: 0;
-  padding: 0 30px;
+  padding: 0;
   list-style: none;
 }
 
+.goods__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: $tablet) {
-  .goods__list {
-    padding: 0 50px;
+  .goods__item {
+    width: 667px;
+    min-height: 333px;
+    margin-bottom: 54px;
   }
 }
 
 @media (min-width: $desktop) {
   .goods__list {
     display: flex;
-    justify-content: space-between;
-    padding: 0 100px;
+  }
+
+  .goods__item {
+    margin-bottom: 0;
+    margin-right: 52px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
