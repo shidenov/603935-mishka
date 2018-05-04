@@ -1,5 +1,6 @@
 .main-nav {
   text-align: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-nav__main-extra-menu {
@@ -22,7 +23,7 @@
 
 .main-nav__logo {
   display: inline-block;
-  padding: 21px 0 22px 0;
+  padding: 21px 0 21px 0;
   text-align: center;
 }
 
@@ -81,6 +82,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border: none;
   }
 
   .main-nav__toggle {
@@ -118,6 +120,10 @@
 @media (min-width: $desktop) {
   .main-nav {
     padding: 0;
+  }
+
+  .main-nav__logo {
+    padding: 9px 0 8px 0;
   }
 
   .main-nav__main-extra-menu {
