@@ -52,6 +52,10 @@
     background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: 1150px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 
   .categories-wrapper__title {
