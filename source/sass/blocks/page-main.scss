@@ -11,8 +11,22 @@
 }
 
 .page-main__about-us {
+  position: relative;
   padding-top: 30px;
   margin-bottom: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: auto 100%;
+    background-repeat: repeat;
+    background-position-x: 10px;
+  }
 }
 
 .page-main__reviews {
@@ -20,7 +34,21 @@
 }
 
 .page-main__contacts-section {
+  position: relative;
   padding-top: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: auto 100%;
+    background-repeat: repeat;
+    background-position-x: 10px;
+  }
 }
 
 .page-main--catalog {
@@ -45,7 +73,21 @@
   }
 
   .page-main__categories {
+    position: relative;
     margin-bottom: 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: auto 100%;
+      background-repeat: repeat;
+      background-position-x: 19px;
+    }
   }
 
   .page-main__top-goods {
@@ -55,6 +97,19 @@
   .page-main__about-us {
     padding-top: 51px;
     margin-bottom: 82px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 17px;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-size: auto 100%;
+      background-repeat: repeat;
+      background-position-x: 22px;
+    }
   }
 
   .page-main__reviews {
@@ -63,6 +118,19 @@
 
   .page-main__contacts-section {
     padding-top: 64px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 17px;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-size: auto 100%;
+      background-repeat: repeat;
+      background-position-x: 22px;
+    }
   }
 
   .page-main--catalog {
@@ -89,6 +157,11 @@
 
   .page-main__categories {
     margin-bottom: 124px;
+
+    &::after {
+      height: 34px;
+      background-position-x: 7px;
+    }
   }
 
   .page-main__top-goods {
@@ -98,10 +171,20 @@
   .page-main__about-us {
     padding-top: 62px;
     margin-bottom: 90px;
+
+    &::before {
+      height: 23px;
+    }
   }
 
   .page-main__contacts-section {
     padding-top: 143px;
+
+    &::before {
+      max-width: 1050px;
+      height: 23px;
+      margin: 0 auto;
+    }
   }
 
   .page-main--catalog {

@@ -10,10 +10,23 @@
 
 @media (min-width: $tablet) {
   .inner-page-title {
+    position: relative;
     margin: 0 0 80px 0;
     padding: 98px 50px 67px 50px;
     font-size: 43px;
     line-height: 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat;
+      background-size: auto 100%;
+    }
   }
 }
 
@@ -23,5 +36,9 @@
     padding: 94px 50px 84px 50px;
     font-size: 53px;
     line-height: 57px;
+
+    &::after {
+      height: 34px;
+    }
   }
 }

@@ -104,6 +104,7 @@
   .main-nav__description {
     display: block;
     order: 2;
+    z-index: 1;
     margin-top: 23px;
     font-family: "OpenSans", "Arial", sans-serif;
     font-size: 15px;
@@ -129,6 +130,7 @@
   .main-nav__main-extra-menu {
     display: flex;
     order: 2;
+    z-index: 1;
     margin-top: 23px;
   }
 
