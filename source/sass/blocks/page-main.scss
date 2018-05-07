@@ -7,26 +7,26 @@
 }
 
 .page-main__top-goods {
-  margin-bottom: 30px;
-}
-
-.page-main__about-us {
   position: relative;
-  padding-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+  padding-bottom: 35px;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
+    bottom: 0;
     height: 6px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-size: auto 100%;
     background-repeat: repeat;
     background-position-x: 10px;
   }
+}
+
+.page-main__about-us {
+  margin-bottom: 60px;
 }
 
 .page-main__reviews {
@@ -91,25 +91,25 @@
   }
 
   .page-main__top-goods {
-    margin-bottom: 52px;
-  }
+    margin-bottom: 51px;
+    padding-bottom: 52px;
 
-  .page-main__about-us {
-    padding-top: 51px;
-    margin-bottom: 82px;
-
-    &::before {
+    &::after {
       content: "";
       position: absolute;
       left: 0;
       right: 0;
-      top: 0;
+      bottom: 0;
       height: 17px;
       background-image: url("../img/bg-zigzag-line.svg");
       background-size: auto 100%;
       background-repeat: repeat;
       background-position-x: 22px;
     }
+  }
+
+  .page-main__about-us {
+    margin-bottom: 82px;
   }
 
   .page-main__reviews {
@@ -165,16 +165,18 @@
   }
 
   .page-main__top-goods {
-    margin-bottom: 73px;
+    margin-bottom: 62px;
+    padding-bottom: 73px;
+
+    &::after {
+      max-width: 1050px;
+      height: 23px;
+      margin: 0 auto;
+    }
   }
 
   .page-main__about-us {
-    padding-top: 62px;
     margin-bottom: 90px;
-
-    &::before {
-      height: 23px;
-    }
   }
 
   .page-main__contacts-section {
