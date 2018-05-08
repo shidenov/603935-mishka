@@ -27,21 +27,21 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-gulp.task("minifyMethod", function() {
+gulp.task("style:min", function() {
   gulp.src("build/css/*.css")
     .pipe(minify())
-    .pipe(rename("style:min.css"))
+    .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
 });
 
 gulp.task("images", function(){
   return gulp.src("source/img/**/*.{png,jpg,svg}")
-  .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
-      imagemin.svgo()
-    ]))
-  .pipe(gulp.dest("source/img"));
+    .pipe(imagemin([
+        imagemin.optipng({optimizationLevel: 3}),
+        imagemin.jpegtran({progressive: true}),
+        imagemin.svgo()
+      ]))
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("webp", function() {
@@ -94,6 +94,7 @@ gulp.task("build", function(done) {
     "clean",
     "copy",
     "style",
+    "style:min"
     "sprite",
     done
     );
