@@ -3,7 +3,7 @@
 }
 
 .contacts__title {
-  margin: 0 0 39px 0;
+  margin: 0 0 26px 0;
   padding: 0;
   font-size: 18px;
   line-height: 30px;
@@ -20,7 +20,7 @@
 
 .contacts__property {
   display: inline-block;
-  width: 75px;
+  width: 74px;
 }
 
 .contacts__address {
@@ -32,6 +32,7 @@
   font-style: normal;
 
   &--mail {
+    padding-bottom: 4px;
     border-bottom: 1px solid #62d1ba;
 
     &:hover {
@@ -46,7 +47,7 @@
 }
 
 .contacts__email {
-  margin: 0 0 38px 0;
+  margin: 0 0 30px 0;
 }
 
 @media (min-width: $tablet) {
