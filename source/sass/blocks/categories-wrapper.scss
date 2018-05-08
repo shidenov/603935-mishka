@@ -3,7 +3,7 @@
 }
 
 .categories-wrapper__title {
-  margin: 0 0 120px 0;
+  margin: 0 0 122px 0;
   padding: 0 30px;
   font-size: 27px;
   line-height: 30px;
@@ -12,11 +12,12 @@
 
 .categories-wrapper__image-container {
   min-height: 489px;
-  padding-top: 71px;
+  padding-top: 70px;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 575px auto;
+  background-position-y: -19px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");

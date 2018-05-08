@@ -14,59 +14,39 @@
 .about-us__item {
   position: relative;
   padding-top: 86px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-  }
+.about-us__svg {
+  position: absolute;
 
-  &--flower::before {
+  &--flower {
     top: 33px;
     left: 8px;
-    width: 32px;
-    height: 37px;
-    background-image: url("../img/icon-feature-flower.svg");
   }
 
-  &--money::before {
+  &--money {
     top: 30px;
     left: 0;
-    width: 47px;
-    height: 27px;
-    background-image: url("../img/icon-feature-money.svg");
   }
 
-  &--heart::before {
+  &--heart {
     top: 35px;
     left: 7px;
-    width: 34px;
-    height: 28px;
-    background-image: url("../img/icon-feature-heart.svg");
   }
 
-  &--ball::before {
+  &--ball {
     top: 32px;
     left: 3px;
-    width: 35px;
-    height: 34px;
-    background-image: url("../img/icon-feature-ball.svg");
   }
 
-  &--rocket::before {
+  &--rocket {
     top: 34px;
     left: -6px;
-    width: 55px;
-    height: 23px;
-    background-image: url("../img/icon-feature-rocket.svg");
   }
 
-  &--gift::before {
+  &--gift {
     top: 31px;
     left: 3px;
-    width: 33px;
-    height: 32px;
-    background-image: url("../img/icon-feature-gift.svg");
   }
 }
 
@@ -86,53 +66,39 @@
     padding-top: 111px;
     font-size: 20px;
     line-height: 22px;
+  }
+
+  .about-us__svg {
+    position: absolute;
 
     &--flower {
       order: 1;
-
-      &::before {
-        top: 50px;
-      }
-    }
-
-    &--ball {
-      order: 2;
-
-      &::before {
-        top: 53px;
-      }
+      top: 50px;
     }
 
     &--money {
       order: 3;
-
-      &::before {
-        top: 58px;
-      }
-    }
-
-    &--rocket {
-      order: 4;
-
-      &::before {
-        top: 61px;
-      }
+      top: 58px;
     }
 
     &--heart {
       order: 5;
+      top: 62px;
+    }
 
-      &::before {
-        top: 62px;
-      }
+    &--ball {
+      order: 2;
+      top: 53px;
+    }
+
+    &--rocket {
+      order: 4;
+      top: 61px;
     }
 
     &--gift {
       order: 6;
-
-      &::before {
-        top: 59px;
-      }
+      top: 59px;
     }
   }
 }

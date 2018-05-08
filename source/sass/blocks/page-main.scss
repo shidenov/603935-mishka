@@ -3,7 +3,7 @@
 }
 
 .page-main__categories {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .page-main__top-goods {
@@ -159,6 +159,7 @@
     margin-bottom: 124px;
 
     &::after {
+      bottom: -15px;
       height: 34px;
       background-position-x: 7px;
     }
