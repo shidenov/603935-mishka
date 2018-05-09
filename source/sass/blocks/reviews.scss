@@ -19,9 +19,13 @@
   font-style: normal;
 }
 
+.reviews__author-name {
+  letter-spacing: 0.01em;
+}
+
 .reviews__author-email {
   display: inline-block;
-  padding-top: 11px;
+  padding-top: 10px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 400;
 }
@@ -57,7 +61,7 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 80px;
+    padding-top: 78px;
     padding-bottom: 51px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -71,13 +75,13 @@
 
   .reviews__title {
     order: -2;
-    margin: 0 auto 50px 0;
+    margin: 0 auto 48px -5px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .reviews__description {
-    margin-bottom: 64px;
+    margin-bottom: 60px;
     font-size: 17px;
   }
 
@@ -88,6 +92,10 @@
     margin: 0;
   }
 
+  .reviews__author-name {
+    letter-spacing: 0.04em;
+  }
+
   .reviews__write {
     order: -1;
     width: 175px;
@@ -96,8 +104,8 @@
 
   .reviews__buttons {
     position: absolute;
-    bottom: 35px;
-    right: 60px;
+    bottom: 36px;
+    right: 67px;
     width: 138px;
     margin: 0;
   }

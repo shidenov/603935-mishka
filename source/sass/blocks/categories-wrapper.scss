@@ -26,10 +26,11 @@
 
 @media (min-width: $tablet) {
   .categories-wrapper__image-container {
-    padding-top: 157px;
+    padding-top: 154px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: 1150px auto;
+    background-position-y: -1px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
@@ -37,7 +38,7 @@
   }
 
   .categories-wrapper__title {
-    margin: 0 0 375px 0;
+    margin: 0 0 372px 0;
     padding: 0 50px;
     font-size: 43px;
     line-height: 50px;

@@ -19,6 +19,17 @@
   padding: 25px 30px 17px 29px;
   color: #ffffff;
 
+  svg {
+    position: relative;
+    bottom: 2px;
+    right: 7px;
+  }
+
+  &--darker svg {
+    bottom:5px;
+    left: 3px;
+  }
+
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
@@ -39,10 +50,16 @@
   }
 
   .categories__link {
-    padding: 33px 37px 32px 35px;
+    padding: 28px 37px 41px 35px;
 
-    &--darker {
-      padding: 33px 32px 32px 35px;
+    svg {
+      bottom: -2px;
+      right: -1px;
+    }
+
+    &--darker svg {
+      bottom: -3px;
+      left: 3px;
     }
   }
 

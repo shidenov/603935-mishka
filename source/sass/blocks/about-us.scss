@@ -57,47 +57,68 @@
   }
 
   .about-us__title {
+    margin-left: -5px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .about-us__item {
     width: 50%;
-    padding-top: 111px;
+    padding-top: 110px;
     font-size: 20px;
     line-height: 22px;
+
+    &--flower {
+      padding-top: 103px;
+      order: 1;
+    }
+
+    &--ball {
+      padding-top: 103px;
+      order: 2;
+    }
+
+    &--money {
+      order: 3;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--gift {
+      order: 6;
+    }
   }
 
   .about-us__svg {
     position: absolute;
 
     &--flower {
-      order: 1;
       top: 50px;
     }
 
     &--money {
-      order: 3;
       top: 58px;
     }
 
     &--heart {
-      order: 5;
       top: 62px;
     }
 
     &--ball {
-      order: 2;
       top: 53px;
     }
 
     &--rocket {
-      order: 4;
       top: 61px;
     }
 
     &--gift {
-      order: 6;
       top: 59px;
     }
   }
