@@ -11,6 +11,10 @@
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
+
+  br {
+    display: none;
+  }
 }
 
 .reviews__author-section {
@@ -124,9 +128,29 @@
 
 @media (min-width: $desktop) {
   .reviews__list {
-    padding-top: 72px;
+    padding-top: 70px;
     padding-bottom: 100px;
     padding-left: 175px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__write {
+    margin-top: 9px;
+  }
+
+  .reviews__description {
+    margin-bottom: 42px;
+    br {
+      display: block;
+    }
+  }
+
+  .reviews__author-name {
+    letter-spacing: 0;
   }
 
   .reviews__buttons {
