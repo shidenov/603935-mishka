@@ -2,11 +2,9 @@
   background-color: #f1f1f1;
 }
 
-.page-footer__logo {
-  display: none;
-}
 
 .page-footer__logo-wrapper {
+  display: none;
   margin: 0;
 
   &:hover {
@@ -30,13 +28,13 @@
     justify-content: space-between;
   }
 
-  .page-footer__logo {
-    display: block;
-  }
-
   .page-footer__logo-wrapper,
   .page-footer__copyright {
     width: 350px;
+  }
+
+  .page-footer__logo-wrapper {
+    display: block;
   }
 
   .page-footer__copyright {
