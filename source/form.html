@@ -89,7 +89,7 @@
 
           <fieldset class="form__group form__group--type">
             <div class="form__inner-section container container--with-paddings">
-              <legend class="form__legend">
+              <legend class="form__legend form__legend--type">
                 <span class="form__sublegend">Тип</span>
               </legend>
 
@@ -163,17 +163,27 @@
 
           <fieldset class="form__group form__group--tel">
             <div class="form__inner-section container container--with-paddings">
-              <div class="form__legend">
+              <div class="form__legend form__legend--tel">
                 <label class="form__sublegend" for="tel">ТЕЛ</label>
               </div>
-              <input class="form__input form__input--tel" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*">
+              <div class="form__input-wrapper">
+                <input class="form__input form__input--tel" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*">
+                <svg width="25" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
+              </div>
             </div>
 
             <div class="form__inner-section container container--with-paddings">
-              <div class="form__legend">
+              <div class="form__legend form__legend--tel">
                 <label class="form__sublegend" for="email">E-MAIL</label>
               </div>
-              <input class="form__input form__input--email" type="email" name="email" id="email" placeholder="Ваш Email*">
+              <div class="form__input-wrapper">
+                <input class="form__input form__input--email" type="email" name="email" id="email" placeholder="Ваш Email*">
+                <svg width="32" height="26" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
+              </div>
             </div>
           </fieldset>
 
