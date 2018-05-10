@@ -14,13 +14,16 @@
   padding: 30px 30px 30px 54px;
   color: #000000;
   line-height: 24px;
+  fill: #d3d2d2;
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
+    fill: rgba(99, 209, 197, 1);
   }
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
+    fill: rgba(99, 209, 187, 0.3);
   }
 }
 

@@ -25,6 +25,14 @@
   display: inline-block;
   padding: 22px 0 18px 0;
   text-align: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: $mobile) {

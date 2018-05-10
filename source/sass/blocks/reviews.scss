@@ -54,6 +54,16 @@
   text-align: center;
   background: none;
   border: 2px solid #ececec;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+    outline: none;
+  }
 }
 
 .reviews__next {

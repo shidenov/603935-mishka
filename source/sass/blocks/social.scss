@@ -22,6 +22,16 @@
   }
 }
 
+.social__link {
+  &:hover {
+    fill: rgba(70, 193, 172, 1);
+  }
+
+  &:active {
+    fill: rgba(70, 193, 172, 0.3);
+  }
+}
+
 @media (min-width: $tablet) {
   .social__list {
     border-bottom: none;

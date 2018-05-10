@@ -9,6 +9,11 @@
 .copyright__link {
   display: inline-flex;
   align-items: center;
+  fill: rgba(70, 193, 172, 1);
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__development {
