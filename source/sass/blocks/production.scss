@@ -25,21 +25,24 @@
 .production__image-wrapper {
   position: relative;
   margin: 0 -1px 27px -1px;
+}
 
-  svg {
-    position: absolute;
-    top: 37px;
-    left: 80px;
-    transition: transform 0.2s;
+.production__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: none;
+  background-color: transparent;
+  transition: transform 0.2s;
+  transform: translate(-50%,-50%);
 
-    &:hover {
-      transform: scale(1.2);
-    }
+  &:hover {
+    transform: translate(-50%,-50%) scale(1.2);
+  }
 
-    &:active {
-      transform: scale(0.8);
-      opacity: 0.7;
-    }
+  &:active {
+    transform: translate(-50%,-50%) scale(0.8);
+    opacity: 0.7;
   }
 }
 
@@ -77,16 +80,12 @@
     order: -1;
     margin: -1px -1px 0 -1px;
     border-bottom: 1px solid #ececec;
-
-    svg {
-      top: 189px;
-      left: 284px;
-    }
   }
 
   .production__title {
     margin: 0 0 32px 0;
     padding-left: 105px;
+    padding-right: 50px;
     padding-top: 37px;
     font-size: 20px;
 
@@ -121,7 +120,7 @@
     position: relative;
     align-items: flex-end;
     min-height: 455px;
-    padding-top: 94px;
+    padding-top: 57px;
   }
 
   .production__image-wrapper {
@@ -132,14 +131,12 @@
     height: 100%;
     margin: -1px -1px -1px -1px;
     border: none;
-
-    svg {
-      left: 291px;
-    }
   }
 
   .production__title {
-    padding: 0 141px 0 80px;
+    width: 35%;
+    padding-left: 78px;
+    padding-right: 80px;
 
     br {
       display: block;
