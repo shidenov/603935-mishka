@@ -46,6 +46,10 @@
     font-size: 53px;
     line-height: 57px;
 
+    &--form {
+      margin: 0 0 104px 0;
+    }
+
     &::after {
       height: 34px;
       background-position-x: -2px;
