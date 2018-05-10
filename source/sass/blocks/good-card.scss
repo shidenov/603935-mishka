@@ -1,5 +1,9 @@
 .good-card {
   border-bottom: 1px solid #ececec;
+
+  &:hover .good-card__description {
+    box-shadow: 0 6px 10px 2px #e9e9e9;
+  }
 }
 
 .good-card__image {
@@ -75,10 +79,12 @@
   .good-card__description {
     display: flex;
     flex-direction: column;
+    padding: 26px 28px 0 26px;
   }
 
   .good-card__price-basket {
     width: 270px;
+    padding: 21px 0 26px 5px;
   }
 
   .good-card__link {
@@ -93,21 +99,30 @@
   .good-card__price {
     font-size: 17px;
   }
+
+  .good-card__button {
+    margin-right: -5px;
+  }
 }
 
 @media (min-width: $desktop) {
   .good-card {
     display: block;
     min-height: 659px;
-    width: 314px;
+    width: 317px;
   }
 
   .good-card__description {
-    min-height: 199px;
-    padding: 28px 31px 0 28px;
+    min-height: 193px;
+    padding: 22px 31px 0 26px;
   }
 
   .good-card__price-basket {
     width: 100%;
+    padding: 23px 0 26px 0px;
+  }
+
+  .good-card__button {
+    margin-right: 1px;
   }
 }

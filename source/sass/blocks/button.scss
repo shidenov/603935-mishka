@@ -10,6 +10,8 @@
   text-align: center;
   border: 2px solid #444444;
   background-color: transparent;
+  cursor: pointer;
+  transition: hover 0.2s;
 
   &:hover {
     color: #ffffff;

@@ -23,6 +23,8 @@
 }
 
 .social__link {
+  transition: hover 0.1s;
+
   &:hover {
     fill: rgba(70, 193, 172, 1);
   }

@@ -59,12 +59,18 @@
       }
 
       svg {
-        margin-right: 33px;
+        margin-right: 32px;
       }
     }
   }
 
   .user-list__item-desc {
     display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .user-list__item:last-child svg {
+    margin-right: 34px;
   }
 }
