@@ -137,9 +137,13 @@
   }
 }
 
-.form__input-wrapper:hover,
-.form__input-wrapper:active {
-  svg{
+.form__input--tel,
+.form__input--email {
+  &:hover + svg{
+    fill: #62d1ba;
+  }
+
+  &:active + svg{
     fill: #62d1ba;
   }
 }

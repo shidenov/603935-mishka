@@ -9,10 +9,14 @@
 .copyright__link {
   display: inline-flex;
   align-items: center;
-  fill: rgba(70, 193, 172, 1);
+  fill: rgba(70, 193, 172, 0.8);
+
+  &:hover {
+    fill: rgba(70, 193, 172, 1);
+  }
 
   &:active {
-    opacity: 0.3;
+    fill: rgba(70, 193, 172, 0.3);
   }
 }
 
