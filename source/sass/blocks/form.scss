@@ -125,29 +125,6 @@
   }
 }
 
-.form__input {
-  &:hover {
-    border-color: #62d1ba;;
-  }
-
-  &:active,
-  &:focus {
-    outline: none;
-    border-color: #62d1ba;
-  }
-}
-
-.form__input--tel,
-.form__input--email {
-  &:hover + svg{
-    fill: #62d1ba;
-  }
-
-  &:active + svg{
-    fill: #62d1ba;
-  }
-}
-
 .form__label-wrapper {
   margin-bottom: 22px;
 }
@@ -176,11 +153,15 @@
   &--tel,
   &--email {
     margin-bottom: 32px;
-  }
-
-  &--tel,
-  &--email {
     padding: 20px 0 17px 0;
+
+    &:hover + svg {
+      fill: #62d1ba;
+    }
+
+    &:active + svg {
+      fill: #62d1ba;
+    }
   }
 
   &--textarea {
@@ -188,6 +169,16 @@
     padding: 13px;
     border: 2px solid #221f1f;
     resize: none;
+  }
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    border-color: #62d1ba;
   }
 }
 
@@ -402,7 +393,7 @@
 @media (min-width: $desktop) {
   .form__inner-section {
     justify-content: flex-start;
-    padding: 0 50px 0 0px;
+    padding: 0 50px 0 0;
   }
 
   .form__group {
@@ -461,7 +452,8 @@
     }
   }
 
-  .form__label--radio::before, .form__label--checkbox::before {
+  .form__label--radio::before,
+  .form__label--checkbox::before {
     left: 5px;
   }
 

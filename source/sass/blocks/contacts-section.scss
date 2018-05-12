@@ -30,6 +30,7 @@
   iframe {
     position: relative;
     z-index: 2;
+    border: 0;
   }
 }
 
@@ -70,7 +71,7 @@
 
   .contacts-section__map {
     position: absolute;
-    right: 0px;
+    right: 0;
     bottom: -55px;
     width: 525px;
 
