@@ -5,6 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <script>document.createElement( "picture" );</script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
     <!-- Pixel Glass -->
 <style>
@@ -102,7 +107,7 @@
                 <span class="good-card__value">Рост 30 см, вес 200 г</span>
                 <p class="good-card__price-basket">
                   <span class="good-card__price">1 200 руб.</span>
-                  <a class="good-card__button" href="#">
+                  <a class="good-card__button js-open-order" href="#">
                     <span class="visually-hidden">корзина</span>
                     <svg width="21" height="19" xmlns="http://www.w3.org/2000/svg">
                       <use xlink:href="img/sprite.svg#icon-cart"></use>
@@ -127,7 +132,7 @@
                 <span class="good-card__value">Диаметр 15 см, высота 10 см</span>
                 <p class="good-card__price-basket">
                   <span class="good-card__price">690 руб.</span>
-                  <a class="good-card__button" href="#">
+                  <a class="good-card__button js-open-order" href="#">
                     <span class="visually-hidden">корзина</span>
                     <svg width="21" height="19" xmlns="http://www.w3.org/2000/svg">
                       <use xlink:href="img/sprite.svg#icon-cart"></use>
@@ -152,7 +157,7 @@
                 <span class="good-card__value">Диаметр 30 см, высота 30 см</span>
                 <p class="good-card__price-basket">
                   <span class="good-card__price">1 500 руб.</span>
-                  <a class="good-card__button" href="#">
+                  <a class="good-card__button js-open-order" href="#">
                     <span class="visually-hidden">корзина</span>
                     <svg width="21" height="19" xmlns="http://www.w3.org/2000/svg">
                       <use xlink:href="img/sprite.svg#icon-cart"></use>
@@ -249,23 +254,27 @@
 
 
     <section class="modal">
-      <h2 class="modal__title">Добавить<br> в корзину</h2>
-      <span class="modal__subtitle">Выберите размер:</span>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-        <input class="modal__radio" type="radio" name="radio" id="size-s" checked="">
-        <label class="modal__label" for="size-s">S</label>
+      <div class="modal__window">
+        <h2 class="modal__title">Добавить<br> в корзину</h2>
+        <span class="modal__subtitle">Выберите размер:</span>
+        <form class="modal__form js-modal-form" action="https://echo.htmlacademy.ru" method="post">
+          <input class="modal__radio" type="radio" name="radio" id="size-s" checked>
+          <label class="modal__label" for="size-s">S</label>
 
-        <input class="modal__radio" type="radio" name="radio" id="size-m">
-        <label class="modal__label" for="size-m">M</label>
+          <input class="modal__radio" type="radio" name="radio" id="size-m">
+          <label class="modal__label" for="size-m">M</label>
 
-        <input class="modal__radio" type="radio" name="radio" id="size-l">
-        <label class="modal__label" for="size-l">L</label>
+          <input class="modal__radio" type="radio" name="radio" id="size-l">
+          <label class="modal__label" for="size-l">L</label>
 
-        <button class="modal__add button" type="submit">Добавить</button>
-      </form>
+          <button class="modal__add button" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
 
+    <script src="js/pollyfills.js"></script>
     <script src="js/open-menu.js"></script>
+    <script src="js/open-modal.js"></script>
 
   </body>
 </html>

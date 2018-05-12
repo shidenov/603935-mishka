@@ -1,3 +1,7 @@
+.reviews__item:not(:first-child) {
+  display: none;
+}
+
 .reviews__title {
   margin: 0 0 23px 0;
   font-size: 25px;

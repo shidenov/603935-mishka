@@ -14,38 +14,38 @@
 .about-us__item {
   position: relative;
   padding-top: 84px;
-}
 
-.about-us__svg {
-  position: absolute;
-  fill: #63d1bb;
+  svg {
+    position: absolute;
+    fill: #63d1bb;
+  }
 
-  &--flower {
+  &--flower svg {
     top: 33px;
     left: 8px;
   }
 
-  &--money {
+  &--money svg {
     top: 30px;
     left: 0;
   }
 
-  &--heart {
+  &--heart svg {
     top: 35px;
     left: 7px;
   }
 
-  &--ball {
+  &--ball svg {
     top: 32px;
     left: 3px;
   }
 
-  &--rocket {
+  &--rocket svg {
     top: 34px;
     left: -6px;
   }
 
-  &--gift {
+  &--gift svg {
     top: 31px;
     left: 3px;
   }
@@ -72,55 +72,51 @@
     &--flower {
       padding-top: 103px;
       order: 1;
+
+      svg {
+        top: 50px;
+      }
     }
 
     &--ball {
       padding-top: 103px;
       order: 2;
+
+      svg {
+        top: 53px;
+      }
     }
 
     &--money {
       order: 3;
+
+      svg {
+        top: 58px;
+      }
     }
 
     &--rocket {
       order: 4;
+
+      svg {
+        top: 61px;
+      }
     }
 
     &--heart {
       order: 5;
+
+      svg {
+        top: 62px;
+      }
     }
 
     &--gift {
       order: 6;
-    }
-  }
 
-  .about-us__svg {
-    position: absolute;
-
-    &--flower {
-      top: 50px;
-    }
-
-    &--money {
-      top: 58px;
-    }
-
-    &--heart {
-      top: 62px;
-    }
-
-    &--ball {
-      top: 53px;
-    }
-
-    &--rocket {
-      top: 61px;
-    }
-
-    &--gift {
-      top: 59px;
+      svg {
+        top: 59px;
+      }
     }
   }
 }

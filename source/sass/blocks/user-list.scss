@@ -6,12 +6,26 @@
 
 .user-list__item {
   border-bottom: 1px solid #ececec;
+
+  svg {
+    position: relative;
+  }
+
+  &--search svg {
+    top: 5px;
+    margin-right: 20px;
+  }
+
+  &--cart svg {
+    top: 5px;
+    margin-right: 18px;
+  }
 }
 
 .user-list__item a {
   display: block;
   position: relative;
-  padding: 30px 30px 30px 54px;
+  padding: 26px 30px 27px 32px;
   color: #000000;
   line-height: 24px;
   fill: #d3d2d2;
@@ -43,6 +57,10 @@
       padding: 0;
     }
 
+    svg {
+      position: static;
+    }
+
     &--search {
       width: 83px;
       border-left: 1px solid #ececec;
@@ -50,6 +68,10 @@
 
       a {
         justify-content: center;
+      }
+
+      svg {
+        margin-right: 0;
       }
     }
 

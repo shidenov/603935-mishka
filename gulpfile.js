@@ -24,15 +24,12 @@ gulp.task("style", function() {
       autoprefixer()
     ]))
     .pipe(gulp.dest("build/css"))
-    .pipe(server.stream());
-});
-
-gulp.task("style:min", function() {
-  gulp.src("build/css/*.css")
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
 });
+
 
 gulp.task("images", function(){
   return gulp.src("source/img/**/*.{png,jpg,svg}")
@@ -47,7 +44,7 @@ gulp.task("images", function(){
 gulp.task("webp", function() {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("sprite", function() {
@@ -107,8 +104,8 @@ gulp.task("build", function(done) {
     "copy",
     "copy:html",
     "style",
-    "style:min",
     "sprite",
+    "webp",
     done
     );
 });
