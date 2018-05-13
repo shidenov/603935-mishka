@@ -1,5 +1,23 @@
+.map {
+  position: relative;
+
+  picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  iframe {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    border: 0;
+  }
+}
+
 .map__image {
-  margin-bottom: 39px;
+  margin-bottom: 37px;
 }
 
 .map__write-container {
@@ -14,6 +32,23 @@
   }
 
   .map__image {
-    margin-bottom: 55px;
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .map {
+    picture {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    iframe {
+      position: relative;
+      z-index: 2;
+      width: 525px;
+    }
   }
 }

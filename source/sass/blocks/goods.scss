@@ -5,6 +5,7 @@
 }
 
 .goods__item {
+  min-height: 374px;
   margin-bottom: 30px;
 
   &:last-child {
@@ -14,9 +15,8 @@
 
 @media (min-width: $tablet) {
   .goods__item {
-    width: 667px;
     min-height: 333px;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
   }
 }
 
@@ -27,7 +27,7 @@
 
   .goods__item {
     margin-bottom: 0;
-    margin-right: 52px;
+    margin-right: 50px;
 
     &:last-child {
       margin-right: 0;

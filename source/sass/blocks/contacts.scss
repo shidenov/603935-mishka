@@ -3,7 +3,7 @@
 }
 
 .contacts__title {
-  margin: 0 0 39px 0;
+  margin: 0 0 26px 0;
   padding: 0;
   font-size: 18px;
   line-height: 30px;
@@ -20,7 +20,11 @@
 
 .contacts__property {
   display: inline-block;
-  width: 75px;
+  width: 73px;
+
+  &--address {
+    width: 76px;
+  }
 }
 
 .contacts__address {
@@ -30,8 +34,10 @@
 .contacts__value {
   width: 180px;
   font-style: normal;
+  color: #444444;
 
   &--mail {
+    padding-bottom: 4px;
     border-bottom: 1px solid #62d1ba;
 
     &:hover {
@@ -40,18 +46,26 @@
 
     &:active {
       color: rgba(70, 193, 174, 0.3);
-      border-bottom-color: rgba(70, 193, 174, 0.3);
+      border-bottom-color: rgba(70, 193, 174, 0.1);
     }
   }
 }
 
 .contacts__email {
-  margin: 0 0 38px 0;
+  margin: 0 0 30px 0;
+}
+
+.contacts__icon-flag {
+  display: none;
 }
 
 @media (min-width: $tablet) {
+  .contacts {
+    position: relative;
+  }
+
   .contacts__title {
-    margin: 0 0 58px 0;
+    margin: 0 0 49px -5px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -62,13 +76,33 @@
     font-size: 17px;
   }
 
+  .contacts__property {
+    width: 71px;
+
+    &--address {
+      width: 77px;
+    }
+  }
+
   .contacts__value {
-    width: 256px;
+    width: 258px;
+  }
+
+  .contacts__icon-flag {
+    position: absolute;
+    display: block;
+    top: -16px;
+    right: 54px;
   }
 }
 
 @media (min-width: $desktop) {
   .contacts__email-section {
     display: block;
+  }
+
+  .contacts__icon-flag {
+    top: -8px;
+    left: -112px;
   }
 }
