@@ -1,3 +1,7 @@
+.page-main {
+  display: block;
+}
+
 .page-main--index {
   margin-bottom: 38px;
 }
@@ -17,6 +21,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
     height: 6px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-size: auto 100%;
@@ -43,6 +48,7 @@
     left: 0;
     right: 0;
     top: 0;
+    width: 100%;
     height: 6px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-size: auto 100%;
@@ -59,7 +65,7 @@
   margin-bottom: 30px;
 }
 
-.page-main__form {
+.page-main--form {
   margin-bottom: 55px;
 }
 
@@ -141,7 +147,7 @@
     margin-bottom: 53px;
   }
 
-  .page-main__form {
+  .page-main--form {
     margin-bottom: 52px;
   }
 
@@ -202,7 +208,7 @@
     margin-bottom: 58px;
   }
 
-  .page-main__form {
+  .page-main--form {
     margin-bottom: 50px;
   }
 }

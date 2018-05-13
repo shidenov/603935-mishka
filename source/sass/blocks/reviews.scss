@@ -1,5 +1,9 @@
-.reviews__item:not(:first-child) {
+.reviews__item {
   display: none;
+
+  &--active {
+    display: block;
+  }
 }
 
 .reviews__title {
@@ -9,6 +13,7 @@
 }
 
 .reviews__description {
+  min-height: 270px;
   margin: 0 0 29px 0;
   font-family: "OpenSans", "Arial", sans-serif;
   color: #444444;
@@ -99,6 +104,8 @@
   }
 
   .reviews__description {
+    min-height: 120px;
+    min-width: 668px;
     margin-bottom: 60px;
     font-size: 17px;
   }
@@ -157,6 +164,8 @@
   }
 
   .reviews__description {
+    min-height: 90px;
+    min-width: 770px;
     margin-bottom: 42px;
 
     br {

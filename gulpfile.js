@@ -6,7 +6,7 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
-var minify = require("gulp-csso");
+var minifyCSS = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -15,6 +15,8 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var run = require("run-sequence");
 var del = require("del");
+var jsmin = require('gulp-jsmin');
+var htmlmin = require('gulp-htmlmin');
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -24,7 +26,7 @@ gulp.task("style", function() {
       autoprefixer()
     ]))
     .pipe(gulp.dest("build/css"))
-    .pipe(minify())
+    .pipe(minifyCSS())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
@@ -74,19 +76,20 @@ gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**"
+    "source/js/**/*.min.js"
     ], {
     base: "source"
     })
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("copy:html", function() {
+gulp.task("html", function() {
   return gulp.src([
-    "source/*.html"
+      "source/*.html"
     ], {
-    base: "source"
+      base: "source"
     })
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 })
 
@@ -98,12 +101,20 @@ gulp.task("clean", function() {
   return del("build");
 });
 
+gulp.task('js', function() {
+  gulp.src(["source/js/**/*.js","!source/js/**/*.min.js"])
+    .pipe(jsmin())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('build/js'))
+});
+
 gulp.task("build", function(done) {
   run(
     "clean",
     "copy",
-    "copy:html",
+    "html",
     "style",
+    "js",
     "sprite",
     "webp",
     done
