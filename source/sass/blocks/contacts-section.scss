@@ -17,21 +17,7 @@
 }
 
 .contacts-section__map {
-  position: relative;
   margin-bottom: 34px;
-
-  picture {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-
-  iframe {
-    position: relative;
-    z-index: 2;
-    border: 0;
-  }
 }
 
 @media (min-width: $tablet) {
@@ -48,10 +34,6 @@
 
   .contacts-section__map {
     margin-bottom: 52px;
-
-    iframe {
-      width: 768px;
-    }
   }
 }
 
@@ -74,19 +56,6 @@
     right: 0;
     bottom: -55px;
     width: 525px;
-
-    picture {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-    }
-
-    iframe {
-      position: relative;
-      z-index: 2;
-      width: 525px;
-    }
   }
 
   .contacts-section__main {

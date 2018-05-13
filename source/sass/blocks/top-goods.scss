@@ -103,9 +103,10 @@
   }
 
   .top-goods__subtitle {
+    position: relative;
     display: block;
     width: 70px;
-    margin-top: 5px;
+    top: 4px;
     font-size: 17px;
     line-height: 17px;
     text-align: center;
@@ -133,6 +134,7 @@
 
   .top-goods__image-description {
     position: absolute;
+    width: 50%;
     top: 7px;
     right: 1px;
   }
@@ -161,6 +163,7 @@
 
   .top-goods__subtitle {
     position: absolute;
+    top: 16px;
     left: 0;
     order: -1;
     width: 175px;

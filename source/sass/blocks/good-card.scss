@@ -61,6 +61,10 @@
 .good-card__button {
   fill: #d3d2d2;
 
+  svg {
+    overflow: hidden;
+  }
+
   &:hover {
     fill: rgba(99, 209, 187, 1);
   }
@@ -74,6 +78,10 @@
   .good-card {
     display: flex;
     border: 1px solid #ececec;
+  }
+
+  .good-card__image-wrapper {
+    width: 334px;
   }
 
   .good-card__description {
@@ -111,6 +119,10 @@
     display: block;
     min-height: 659px;
     width: 317px;
+  }
+
+  .good-card__image-wrapper {
+    width: 100%;
   }
 
   .good-card__description {

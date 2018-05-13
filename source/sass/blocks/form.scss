@@ -25,6 +25,7 @@
 
 .form__legend {
   position: relative;
+  z-index: 1;
   padding: 0;
   line-height: 16px;
   color: #62d1ba;
@@ -41,6 +42,18 @@
 
   &--initials {
     margin-bottom: 28px;
+  }
+
+  &--type {
+    margin-bottom: 9px;
+  }
+
+  &--textarea {
+    margin-bottom: 42px;
+  }
+
+  &--tel {
+    margin-bottom: 2px;
   }
 }
 
@@ -142,9 +155,10 @@
 
 .form__input {
   width: 100%;
-  padding: 16px 0;
+  margin-top: -15px;
+  padding-top: 16px;
   font-family: "OpenSans", "Arial", sans-serif;
-  line-height: 18px;
+  line-height: 48px;
   font-size: 17px;
   font-weight: 100;
   border: none;
@@ -153,7 +167,7 @@
   &--tel,
   &--email {
     margin-bottom: 32px;
-    padding: 20px 0 17px 0;
+    padding-top: 20px;
 
     &:hover + svg,
     &:active + svg,
@@ -165,6 +179,7 @@
   &--textarea {
     min-height: 142px;
     padding: 13px;
+    line-height: 18px;
     border: 2px solid #221f1f;
     resize: none;
   }
@@ -178,18 +193,6 @@
     outline: none;
     border-color: #62d1ba;
   }
-}
-
-.form__legend--type {
-  margin-bottom: 9px;
-}
-
-.form__legend--textarea {
-  margin-bottom: 24px;
-}
-
-.form__legend--tel {
-  margin-bottom: 2px;
 }
 
 .form__required {
@@ -233,7 +236,7 @@
     }
 
     &--textarea {
-      padding-top: 55px;
+      padding-top: 65px;
       padding-bottom: 52px;
     }
   }
@@ -267,7 +270,7 @@
     }
 
     &--textarea {
-      padding: 12px 0 15px 0;
+      padding: 2px 0 15px 0;
     }
 
     &--initials {
@@ -322,6 +325,26 @@
     }
   }
 
+  .form__input {
+    padding: 0 17px;
+    font-size: 19px;
+    background-color: transparent;
+
+    &--tel {
+      width: 500px;
+      margin-bottom: 40px;
+    }
+
+    &--email {
+      width: 500px;
+    }
+
+    &--textarea {
+      width: 500px;
+      padding: 13px;
+    }
+  }
+
   .form__input--radio:checked + .form__label--radio::after {
     top: 15px;
     left: 15px;
@@ -340,28 +363,6 @@
 
     &:last-child {
       margin-bottom: 0;
-    }
-  }
-
-  .form__input {
-    margin-top: -5px;
-    padding: 0 17px 12px 17px;
-    font-size: 19px;
-    line-height: 18px;
-    background-color: transparent;
-
-    &--tel {
-      width: 500px;
-      margin-bottom: 40px;
-    }
-
-    &--email {
-      width: 500px;
-    }
-
-    &--textarea {
-      width: 500px;
-      padding: 13px;
     }
   }
 
@@ -414,7 +415,7 @@
     }
 
     &--textarea {
-      padding: 55px 0 49px 0;
+      padding-bottom: 49px;
     }
   }
 
@@ -435,7 +436,7 @@
     }
 
     &--textarea {
-      padding: 13px 0 18px 63px;
+      padding: 2px 0 18px 63px;
     }
   }
 

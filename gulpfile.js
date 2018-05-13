@@ -89,11 +89,11 @@ gulp.task("html", function() {
     ], {
       base: "source"
     })
-    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(htmlmin())
     .pipe(gulp.dest("build"));
 })
 
-gulp.task("reload", ["copy:html"], function() {
+gulp.task("reload", ["html"], function() {
   server.reload();
 })
 

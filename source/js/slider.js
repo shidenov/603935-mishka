@@ -23,7 +23,7 @@ function showDivs(n) {
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
-     x[i].classList.remove("reviews__item--active");
+    x[i].classList.remove("reviews__item--active");
   }
   x[slideIndex-1].classList.add("reviews__item--active");
 }
