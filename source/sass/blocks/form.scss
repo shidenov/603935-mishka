@@ -155,8 +155,10 @@
 
 .form__input {
   width: 100%;
-  margin-top: -15px;
+  height: 46px;
+  margin-top: -13px;
   padding-top: 16px;
+  box-sizing: content-box;
   font-family: "OpenSans", "Arial", sans-serif;
   line-height: 48px;
   font-size: 17px;
@@ -179,6 +181,7 @@
   &--textarea {
     min-height: 142px;
     padding: 13px;
+    box-sizing: border-box;
     line-height: 18px;
     border: 2px solid #221f1f;
     resize: none;
@@ -326,7 +329,9 @@
   }
 
   .form__input {
+    height: 48px;
     padding: 0 17px;
+    box-sizing: border-box;
     font-size: 19px;
     background-color: transparent;
 

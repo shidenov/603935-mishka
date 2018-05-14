@@ -23,13 +23,14 @@
 @media (min-width: $desktop) {
   .goods__list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .goods__item {
     margin-bottom: 0;
-    margin-right: 50px;
+    margin-right: 49px;
 
-    &:last-child {
+    &:nth-child(3n) {
       margin-right: 0;
     }
   }
